@@ -1,0 +1,53 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "学习"
+			}
+		}
+	    ,{
+            "path" : "pages/life/life",
+            "style" : {
+				"navigationBarTitleText": "生活"
+			}
+        }
+        ,{
+            "path" : "pages/set/set",
+            "style" : {
+				"navigationBarTitleText": "个人设置"
+			}
+        }
+    ],
+	"tabBar": {
+		"color": "#888888",
+	    "selectedColor": "#ffaa00",
+	    "borderStyle": "black",
+	    "backgroundColor": "#F8F8F8",
+	    "list": [{
+	        "pagePath": "pages/index/index",
+	        "iconPath": "static/image/tabbar/studyh.png",
+	        "selectedIconPath": "static/image/tabbar/study.png",
+	        "text": "学习"
+	    }, 
+		{
+	        "pagePath": "pages/life/life",
+	        "iconPath": "static/image/tabbar/lifeh.png",
+			"selectedIconPath": "static/image/tabbar/life.png",
+	        "text": "生活"
+	    },
+		{
+		    "pagePath": "pages/set/set",
+		    "iconPath": "static/image/tabbar/seth.png",
+			"selectedIconPath": "static/image/tabbar/set.png",
+		    "text": "设置"
+		}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
