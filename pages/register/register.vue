@@ -9,7 +9,7 @@
 			<text>今日你已签到！</text>
 		</view>
 		<view class="showBoard">
-			<view class="registerButton" @click="registerClick" :style="buttonClick">
+			<view class="registerButton" @click="registerClick" :style="{backgroundColor:buttonClick}">
 				<text style="color: #ddd; font-size: 15px;">签到</text>
 				<text style="color:#fff; font-size: 18px;margin-top: 5px;">{{hour}}:{{minute}}:{{seconds}}</text>
 			</view>
@@ -27,12 +27,7 @@
 				seconds: 0,
 				minute: 0,
 				registerIf : false,
-				buttonClick: {
-					'background-color':'green'
-				},
-				orange:{
-					'background-color':'#f77103'
-				}
+				buttonClick: ''
 			};
 		},
 		components: {
@@ -47,7 +42,7 @@
 			registerClick: function(){
 				if(!this.registerIf){
 					this.registerIf = !this.registerIf;
-					this.buttonClick = this.orange;
+					this.buttonClick = '#3193fd';
 				}
 			}
 		},

@@ -3,13 +3,13 @@
 		<view class="search">
 			<image src="../../static/image/index/search.png" class="searchimg"></image>
 			<input type="text" placeholder="请输入关键字" class="searchinput" confirm-type="search" @focus="startSearch" @blur="startSearch" />
-			<view class="calendarholder" v-if="calendarShow" @click="TurntoRegister">
+			<view class="calendarholder" v-show="calendarShow" @click="TurntoRegister">
 				<image src="../../static/image/index/calendar.png" class="calendar"></image>
 				<text class="calendarnum">{{calendarNum}}</text>
 			</view>
 		</view>
-		<view class="searchboard" ref="searchboard" v-if="!calendarShow">
-			<view v-show="!calendarShow">
+		<view class="searchboard" ref="searchboard" v-bind:style="{height:height+'vh'}">
+			<view v-show="dataShow">
 				<view class="hot">
 					<image src="../../static/image/index/fire.png" class="hotImg"></image>
 					<image src="../../static/image/index/hot.png" class="hotImg"></image>
@@ -44,7 +44,10 @@
 		data() {
 			return {
 				calendarShow: true,
-				searchboard: 'searchboard'
+				dataShow: false,
+				searchboard: 'searchboard',
+				height: 0,
+				timer: null
 			}
 		},
 		onLoad() {
@@ -56,27 +59,35 @@
 		},
 		methods: {
 			startSearch: function() {
-				this.calendarShow = !this.calendarShow;
-				// let searchboard = document.getElementsByClassName('searchboard');
-				// let height = searchboard.style.height;
-				let searchboard = this.$refs.searchboard;
-				console.log(searchboard);
-				// if (height >= 0) {
-				// 	setInterval(function() {
-				// 		heightNum = Number(height);
-				// 		heightNum = heightNum-1;
-				// 		height = heightNum + 'vh'
-				// 	}, 1000)
-				// }
-				// else{
-				// 	setInterval(function() {
-				// 		heightNum = Number(height);
-				// 		heightNum = heightNum+1;
-				// 		height = heightNum + 'vh'
-				// 	}, 1000)
-				// }
+				let _this = this;
+				_this.calendarShow = !_this.calendarShow;
+				let height = _this.height;
+				if (height < 100) {
+					_this.timer = setInterval(function() {
+						if (height <= 100) {
+							height += 10;
+							_this.height = height;
+							// console.log(_this.height);
+						} else
+							clearInterval(_this.timer)
+					}, 10)
+					_this.dataShow = !_this.dataShow;
+				} 
+				else {
+					_this.dataShow = !_this.dataShow;
+					if (height >= 100) {
+						_this.timer = setInterval(function() {
+							if (height >= 0) {
+								height -= 10;
+								_this.height = height;
+								// console.log(_this.height);
+							} else
+								clearInterval(_this.timer)
+						}, 10)
+					}
+				}
 			},
-			TurntoRegister:function(){
+			TurntoRegister: function() {
 				uni.navigateTo({
 					url: '/pages/register/register'
 				})
@@ -88,8 +99,7 @@
 				return date.getDate();
 			}
 		},
-		mounted() {
-		}
+		mounted() {}
 	}
 </script>
 
@@ -148,7 +158,6 @@
 	.searchboard {
 		position: fixed;
 		width: 100vw;
-		height: 100vh;
 		background-color: $uni-bg-color;
 		display: flex;
 		flex-direction: column;
@@ -192,7 +201,8 @@
 		color: $uni-text-color-inverse;
 		font-size: $uni-font-size-llg;
 	}
-	.indexborder{
+
+	.indexborder {
 		width: 60px;
 		height: 60px;
 		background-color: $uni-bg-color;
@@ -203,6 +213,7 @@
 		align-items: center;
 		margin-left: 2 * $space;
 	}
+
 	.indexImg {
 		width: 40px;
 		height: 40px;

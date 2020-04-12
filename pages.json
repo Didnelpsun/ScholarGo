@@ -6,22 +6,16 @@
 				"navigationBarTitleText": "首页"
 			}
 		}
-	    ,{
-            "path" : "pages/user/user",
-            "style" : {
-				"navigationBarTitleText": "用户中心"
+		,{
+		    "path" : "pages/reward/reward",
+		    "style" : {
+				"navigationBarTitleText": "悬赏贴中心"
 			}
-        }
+		}
         ,{
             "path" : "pages/plus/plus",
             "style" : {
 				"navigationBarTitleText": "新建"
-			}
-        }
-        ,{
-            "path" : "pages/reward/reward",
-            "style" : {
-				"navigationBarTitleText": "悬赏贴中心"
 			}
         }
         ,{
@@ -30,6 +24,13 @@
 				"navigationBarTitleText": "自主寻找中心"
 			}
         }
+		
+		,{
+		    "path" : "pages/user/user",
+		    "style" : {
+				"navigationStyle":"custom"
+			}
+		}
         ,{
             "path" : "pages/register/register",
             "style" : {
@@ -47,19 +48,7 @@
 	        "iconPath": "static/image/tabbar/indexh.png",
 	        "selectedIconPath": "static/image/tabbar/index.png",
 	        "text": "学习"
-	    }, 
-		{
-	        "pagePath": "pages/user/user",
-	        "iconPath": "static/image/tabbar/userh.png",
-			"selectedIconPath": "static/image/tabbar/user.png",
-	        "text": "用户中心"
 	    },
-		{
-		    "pagePath": "pages/plus/plus",
-		    "iconPath": "static/image/tabbar/plush.png",
-			"selectedIconPath": "static/image/tabbar/plus.png",
-			"text": ""
-		},
 		{
 		    "pagePath": "pages/reward/reward",
 		    "iconPath": "static/image/tabbar/rewardh.png",
@@ -67,17 +56,28 @@
 		    "text": "悬赏帖"
 		},
 		{
+		    "pagePath": "pages/plus/plus",
+		    "iconPath": "static/image/tabbar/plush.png",
+			"selectedIconPath": "static/image/tabbar/plus.png",
+			"text": ""
+		},
+		{
 	        "pagePath": "pages/find/find",
 	        "iconPath": "static/image/tabbar/findh.png",
 			"selectedIconPath": "static/image/tabbar/find.png",
 	        "text": "自主寻找"
+	    },
+		{
+	        "pagePath": "pages/user/user",
+	        "iconPath": "static/image/tabbar/userh.png",
+			"selectedIconPath": "static/image/tabbar/user.png",
+	        "text": "用户中心"
 	    }
 		]
 	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#FFFFFF",
-		"backgroundColor": "#FFFFFF"
+		"navigationBarBackgroundColor": "#FFFFFF"
+		// "backgroundColor": "#FFFFFF"
 	}
 }
