@@ -3,19 +3,37 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "学习"
+				"navigationBarTitleText": "首页"
 			}
 		}
 	    ,{
-            "path" : "pages/life/life",
+            "path" : "pages/user/user",
             "style" : {
-				"navigationBarTitleText": "生活"
+				"navigationBarTitleText": "用户中心"
 			}
         }
         ,{
-            "path" : "pages/set/set",
+            "path" : "pages/plus/plus",
             "style" : {
-				"navigationBarTitleText": "个人设置"
+				"navigationBarTitleText": "新建"
+			}
+        }
+        ,{
+            "path" : "pages/reward/reward",
+            "style" : {
+				"navigationBarTitleText": "悬赏贴中心"
+			}
+        }
+        ,{
+            "path" : "pages/find/find",
+            "style" : {
+				"navigationBarTitleText": "自主寻找中心"
+			}
+        }
+        ,{
+            "path" : "pages/register/register",
+            "style" : {
+				"navigationBarTitleText": "每日签到"
 			}
         }
     ],
@@ -23,31 +41,43 @@
 		"color": "#888888",
 	    "selectedColor": "#ffaa00",
 	    "borderStyle": "black",
-	    "backgroundColor": "#F8F8F8",
+	    "backgroundColor": "#FFFFFF",
 	    "list": [{
 	        "pagePath": "pages/index/index",
-	        "iconPath": "static/image/tabbar/studyh.png",
-	        "selectedIconPath": "static/image/tabbar/study.png",
+	        "iconPath": "static/image/tabbar/indexh.png",
+	        "selectedIconPath": "static/image/tabbar/index.png",
 	        "text": "学习"
 	    }, 
 		{
-	        "pagePath": "pages/life/life",
-	        "iconPath": "static/image/tabbar/lifeh.png",
-			"selectedIconPath": "static/image/tabbar/life.png",
-	        "text": "生活"
+	        "pagePath": "pages/user/user",
+	        "iconPath": "static/image/tabbar/userh.png",
+			"selectedIconPath": "static/image/tabbar/user.png",
+	        "text": "用户中心"
 	    },
 		{
-		    "pagePath": "pages/set/set",
-		    "iconPath": "static/image/tabbar/seth.png",
-			"selectedIconPath": "static/image/tabbar/set.png",
-		    "text": "设置"
-		}
+		    "pagePath": "pages/plus/plus",
+		    "iconPath": "static/image/tabbar/plush.png",
+			"selectedIconPath": "static/image/tabbar/plus.png",
+			"text": ""
+		},
+		{
+		    "pagePath": "pages/reward/reward",
+		    "iconPath": "static/image/tabbar/rewardh.png",
+			"selectedIconPath": "static/image/tabbar/reward.png",
+		    "text": "悬赏帖"
+		},
+		{
+	        "pagePath": "pages/find/find",
+	        "iconPath": "static/image/tabbar/findh.png",
+			"selectedIconPath": "static/image/tabbar/find.png",
+	        "text": "自主寻找"
+	    }
 		]
 	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
 	}
 }
