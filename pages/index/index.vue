@@ -20,7 +20,7 @@
 			</view>
 		</view>
 		<view class="content">
-			<adver></adver>
+			<adverSwiper/>
 			<view class="indexboard" style="background-color: #7e92dc;">
 				<text>我要求助</text>
 				<view class="indexborder">
@@ -38,7 +38,7 @@
 </template>
 
 <script>
-	import adver from '../../components/adver-swiper/adver-swiper.vue'
+	import adverSwiper from '../../components/adver-swiper/adver-swiper.vue'
 	import uniCalendar from '@/components/uni-calendar/uni-calendar.vue'
 	export default {
 		data() {
@@ -55,7 +55,7 @@
 		},
 		components: {
 			uniCalendar,
-			adver
+			adverSwiper
 		},
 		methods: {
 			startSearch: function() {
