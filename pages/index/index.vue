@@ -21,18 +21,22 @@
 		</view>
 		<view class="content">
 			<adverSwiper/>
+			<navigator url="../want_help/want_help" hover-class="navigator-hover">
 			<view class="indexboard" style="background-color: #7e92dc;">
-				<text>我要求助</text>
-				<view class="indexborder">
-					<image src="../../static/image/index/answeer.png" class="indexImg"></image>
-				</view>
+					<text>我要求助</text>
+					<view class="indexborder">
+						<image src="../../static/image/index/answeer.png" class="indexImg"></image>
+					</view>
 			</view>
+			</navigator>
+			<navigator url="../will_help/will_help" hover-class="navigator-hover">
 			<view class="indexboard" style="background-color: #9477f3;">
-				<text>我愿帮助</text>
-				<view class="indexborder">
-					<image src="../../static/image/index/ask.png" class="indexImg"></image>
+				    <text>我愿帮助</text>
+					<view class="indexborder">
+			            <image src="../../static/image/index/ask.png" class="indexImg"></image>
+			        </view>
 				</view>
-			</view>
+			</navigator>
 		</view>
 	</view>
 </template>
@@ -50,9 +54,10 @@
 				timer: null
 			}
 		},
-		onLoad() {
-
-		},
+		onLoad: function (option) { //option为object类型，会序列化上个页面传递的参数
+		        console.log(option.id); //打印出上个页面传递的参数。
+		        console.log(option.name); //打印出上个页面传递的参数。
+		    },
 		components: {
 			uniCalendar,
 			adverSwiper
