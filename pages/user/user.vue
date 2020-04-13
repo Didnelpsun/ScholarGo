@@ -13,9 +13,11 @@
 		</view>
 		<view class="content">
 			<clickCard style="margin-bottom: 15px;"
-			title="请完成实名认证,体验更多服务"
-			badgeType="error"
-			messageNum="1"
+			:title="realNameTitle"
+			:subtitle="realNameSubtitle"
+			:badgeType="realNameBadgeType"
+			:messageNum="realNameMessageNum"
+			:dot="realNameDot"
 			arrow=true
 			/>
 			<clickCard style="margin-bottom: 15px;"
@@ -69,7 +71,12 @@
 			return {
 				username: '未设置名称',
 				usertel: '无',
-				userimage: '../../static/image/user/userimage.jpg'
+				userimage: '../../static/image/user/userimage.jpg',
+				realNameTitle: '请完成实名认证,体验更多服务',
+				realNameSubtitle: null,
+				realNameBadgeType:'error',
+				realNameMessageNum: 1,
+				realNameDot:false
 			};
 		},
 		components:{ clickCard, uniIcons },
