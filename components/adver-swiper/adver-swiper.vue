@@ -31,7 +31,7 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" socped>
 	swiper {
 		width: 100vw;
 		height: 45vh;

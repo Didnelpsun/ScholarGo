@@ -84,7 +84,7 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" socped>
 	.user {
 		background-color: $uni-bg-color-darkg;
 		height: 100vh;

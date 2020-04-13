@@ -103,7 +103,7 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" socped>
 	.index {
 		font-size: $uni-font-size-base;
 	}

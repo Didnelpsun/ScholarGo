@@ -7,7 +7,7 @@
 			</text>
 		</view>
 		<view class="view">
-			<text class="sub" v-if="subtitle">
+			<text class="sub" v-if="subtitle!=null">
 				{{subtitle}}
 			</text>
 			<uniBadge :text="messageNum" :type="badgeType" size="small" v-if="messageNum" />
@@ -42,7 +42,7 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" socped>
 	.clickCard {
 		background-color: $uni-bg-color;
 		width: 100vw;
