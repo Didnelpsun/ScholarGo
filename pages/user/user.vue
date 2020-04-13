@@ -16,6 +16,7 @@
 			title="请完成实名认证,体验更多服务"
 			badgeType="error"
 			messageNum="1"
+			arrow=true
 			/>
 			<clickCard style="margin-bottom: 15px;"
 			iconType="contact-filled"
@@ -24,18 +25,22 @@
 			title="等级"
 			subtitle="100积分待领取"
 			dot= true
+			@click.native="turnTo('/pages/grade/grade')"
+			arrow=true
 			/>
 			<clickCard
 			iconType="cart-filled"
 			iconSize="22"
 			iconColor="#fd7e31"
 			title="订单"
+			arrow=true
 			/>
 			<clickCard
 			iconType="list"
 			iconSize="22"
 			iconColor="#a79af4"
 			 title="资产"
+			arrow=true
 			/>
 			<clickCard 
 			iconType="home-filled"
@@ -43,12 +48,14 @@
 			iconColor="#fce94c"
 			title="个人信息"
 			subtitle="查看详情"
+			arrow=true
 			/>
 			<clickCard 
 			iconType="gear-filled"
 			iconSize="22"
 			iconColor="#bc4cfc"
 			title="设置"
+			arrow=true
 			/>
 		</view>
 	</view>
@@ -65,7 +72,15 @@
 				userimage: '../../static/image/user/userimage.jpg'
 			};
 		},
-		components:{ clickCard, uniIcons }
+		components:{ clickCard, uniIcons },
+		methods:{
+			turnTo:(urls)=>{
+				uni.navigateTo({
+					url:urls
+				})
+				console.log('hello')
+			}
+		}
 	}
 </script>
 

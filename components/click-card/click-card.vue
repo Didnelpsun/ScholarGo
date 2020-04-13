@@ -1,7 +1,7 @@
 <template>
 	<view class="clickCard">
 		<view class="view">
-			<uniIcons :type="iconType" :color="iconColor" :size="iconSize" />
+			<uniIcons :type="iconType" :color="iconColor" :size="iconSize" v-if="iconType"/>
 			<text>
 				{{title}}
 			</text>
@@ -10,9 +10,9 @@
 			<text class="sub" v-if="subtitle">
 				{{subtitle}}
 			</text>
-			<uniBadge :text="messageNum" :type="badgeType" size="small" />
+			<uniBadge :text="messageNum" :type="badgeType" size="small" v-if="messageNum" />
 			<view class="dot" v-if="dot"></view>
-			<uniIcons type="arrowright" color="#999" size="25"></uniIcons>
+			<uniIcons type="arrowright" color="#999" size="20" v-if="arrow"></uniIcons>
 		</view>
 	</view>
 </template>
@@ -32,7 +32,8 @@
 			'subtitle',
 			'messageNum',
 			'badgeType',
-			'dot'
+			'dot',
+			'arrow'
 		],
 		components: {
 			uniBadge,
@@ -56,12 +57,12 @@
 		font-size: $uni-font-size-base;
 	}
 	.view{
-		
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+		padding-right: 10px;
 		text{
-			margin: 5px;
+			margin: 0 10px 0 5px;
 			text-align: center;
 		}
 	}
