@@ -17,14 +17,7 @@
             "style" : {
 				"navigationBarTitleText": "新建"
 			}
-        }
-        ,{
-            "path" : "pages/find/find",
-            "style" : {
-				"navigationBarTitleText": "自主寻找中心"
-			}
-        }
-		
+        }		
 		,{
 		    "path" : "pages/user/user",
 		    "style" : {
@@ -36,7 +29,37 @@
             "style" : {
 				"navigationBarTitleText": "每日签到"
 			}
+        } 
+		,{
+            "path" : "pages/will_help/will_help",
+            "style" : {
+				"navigationBarTitleText": "我愿帮助"
+			}
         }
+        ,{
+            "path" : "pages/want_help/want_help",
+            "style" : {
+				"navigationBarTitleText": "我要求助"
+			}
+        }
+        ,{
+            "path" : "pages/study_want/study_want",
+            "style" : {
+				"navigationBarTitleText": "学习求助"
+			}
+        }
+        ,{
+            "path" : "pages/life_want/life_want",
+            "style" : {
+				"navigationBarTitleText": "生活求助"
+			}
+        },
+		{
+		    "path" : "pages/find/find",
+		    "style" : {
+				"navigationBarTitleText": "自主寻找中心"
+			}
+		}
     ],
 	"tabBar": {
 		"color": "#888888",
