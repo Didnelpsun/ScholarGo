@@ -8,13 +8,55 @@
 					<text>{{username}}</text>
 					<text class="userTel">{{usertel}}</text>
 				</view>
-				<image style="width: 20px;height: 20px;" src="../../static/image/user/arrow.png"></image>
+				<uniIcons type="arrowright" color="#fff" size="25"></uniIcons>
 			</view>
+		</view>
+		<view class="content">
+			<clickCard style="margin-bottom: 15px;"
+			title="请完成实名认证,体验更多服务"
+			badgeType="error"
+			messageNum="1"
+			/>
+			<clickCard style="margin-bottom: 15px;"
+			iconType="contact-filled"
+			iconSize="25"
+			iconColor="#3193fd"
+			title="等级"
+			subtitle="100积分待领取"
+			dot= true
+			/>
+			<clickCard
+			iconType="cart-filled"
+			iconSize="22"
+			iconColor="#fd7e31"
+			title="订单"
+			/>
+			<clickCard
+			iconType="list"
+			iconSize="22"
+			iconColor="#a79af4"
+			 title="资产"
+			/>
+			<clickCard 
+			iconType="home-filled"
+			iconSize="22"
+			iconColor="#fce94c"
+			title="个人信息"
+			subtitle="查看详情"
+			/>
+			<clickCard 
+			iconType="gear-filled"
+			iconSize="22"
+			iconColor="#bc4cfc"
+			title="设置"
+			/>
 		</view>
 	</view>
 </template>
 
 <script>
+	import clickCard from '@/components/click-card/click-card.vue'
+	import uniIcons from "@/components/uni-icons/uni-icons.vue"
 	export default {
 		data() {
 			return {
@@ -22,7 +64,8 @@
 				usertel: '无',
 				userimage: '../../static/image/user/userimage.jpg'
 			};
-		}
+		},
+		components:{ clickCard, uniIcons }
 	}
 </script>
 
@@ -33,7 +76,7 @@
 	}
 	.head {
 		background-color: #007AFF;
-		height: 15vh;
+		height: 12vh;
 		color: $uni-text-color-inverse;
 		padding: 4 * $space;
 		display: flex;
@@ -73,5 +116,9 @@
 		width: auto;
 		border-radius: 2vw;
 		margin-top: $space;
+	}
+	.content{
+		display: flex;
+		flex-direction: column;
 	}
 </style>
