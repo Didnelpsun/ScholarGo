@@ -46,6 +46,7 @@
 			服务地点（线下）：\n
 			</text>
 			</uni-card>
+			<reward-stickers service="学习" name="小王" address="八号楼"></reward-stickers>
 		</view>
 	</view>
 </template>
@@ -54,6 +55,7 @@
 	import adverSwiper from '../../components/adver-swiper/adver-swiper.vue'
 	import uniCalendar from '@/components/uni-calendar/uni-calendar.vue'
 	import uniCard from '@/components/uni-card/uni-card.vue'
+	import rewardSticker from '@/components/reward-stickers/reward-stickers.vue'
 	export default {
 		data() {
 			return {
