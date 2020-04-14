@@ -20,12 +20,14 @@
 					服务地点（线下）：\n
 				</text>
 			</uni-card>
+			<reward-stickers service="学习" name="小王" address="八号楼"></reward-stickers>
 		</view>
 	</view>
 </template>
 
 <script>
 	import uniCard from '@/components/uni-card/uni-card.vue'
+	import rewardSticker from '@/components/reward-stickers/reward-stickers.vue'
 	import searchBar from '../../components/search-bar/search-bar.vue'
 	export default {
 		data() {
