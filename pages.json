@@ -97,6 +97,10 @@
             "path" : "pages/cash_withdraw/cash_withdraw",
             "style" : {}
         }
+        ,{
+            "path" : "pages/cash_detail/cash_detail",
+            "style" : {}
+        }
     ],
 	"tabBar": {
 		"color": "#888888",

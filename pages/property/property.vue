@@ -11,14 +11,14 @@
 					<text>剩余金额</text>
 				</view>
 				<view class="button" @click="turnTo('/pages/deposit/deposit')">充值</view>
-				<view class="button">提现</view>
+				<view class="button" @click="turnTo('/pages/cash_withdraw/cash_withdraw')">提现</view>
 			</view>
 			<view class="dataView">
 				<view class="dataInner" style="background-color: #FFFFFF;">
 					<text>￥{{total}}</text>
 					<text>总计消费</text>
 				</view>
-				<view class="button">明细</view>
+				<view class="button" @click="turnTo('/pages/cash_detail/cash_detail')">明细</view>
 			</view>
 		</view>
 		<view class="chart">

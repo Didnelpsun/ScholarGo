@@ -24,17 +24,44 @@
 		data() {
 			return {};
 		},
-		props: [
-			'iconType',
-			'iconSize',
-			'iconColor',
-			'title',
-			'subtitle',
-			'messageNum',
-			'badgeType',
-			'dot',
-			'arrow'
-		],
+		props: {
+			'iconType':{
+				type:String,
+				default:null
+			},
+			'iconSize':{
+				type:Number,
+				default:0
+			},
+			'iconColor':{
+				type:String,
+				default:''
+			},
+			'title':{
+				type:String,
+				default:''
+			},
+			'subtitle':{
+				type:String,
+				default:null
+			},
+			'messageNum':{
+				type:Number,
+				default:0
+			},
+			'badgeType':{
+				type:String,
+				default:null
+			},
+			'dot':{
+				type:Boolean,
+				default:false
+			},
+			'arrow':{
+				type:Boolean,
+				default:false
+			}
+		},
 		components: {
 			uniBadge,
 			uniIcons

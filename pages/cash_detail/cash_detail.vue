@@ -1,5 +1,5 @@
 <template>
-	<view class="cash_withdraw">
+	<view class="cash_detail">
 		
 	</view>
 </template>
