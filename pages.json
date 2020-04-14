@@ -61,10 +61,41 @@
 			}
 		}
         ,{
+            "path" : "pages/user_main/user_main",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/real_name/real_name",
+            "style" : {}
+        }
+        ,{
             "path" : "pages/grade/grade",
             "style" : {
 				"navigationBarTitleText": "等级"
 			}
+        }
+        ,{
+            "path" : "pages/order/order",
+            "style" : {
+				"navigationBarTitleText": "我的服务订单"
+			}
+        }
+        ,{
+            "path" : "pages/property/property",
+            "style" : {
+				"navigationBarTitleText": "资产"
+			}
+        },{
+            "path" : "pages/set/set",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/deposit/deposit",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/cash_withdraw/cash_withdraw",
+            "style" : {}
         }
     ],
 	"tabBar": {

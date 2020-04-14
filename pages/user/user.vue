@@ -1,6 +1,6 @@
 <template>
 	<view class="user">
-		<view class="head">
+		<view class="head" @click="turnTo('/pages/user_main/user_main')">
 			<text class="fristText">用户中心</text>
 			<view class="userBoard">
 				<image class="userImg" :src="userimage"></image>
@@ -13,11 +13,12 @@
 		</view>
 		<view class="content">
 			<clickCard style="margin-bottom: 15px;"
-			:title="realNameTitle"
-			:subtitle="realNameSubtitle"
-			:badgeType="realNameBadgeType"
-			:messageNum="realNameMessageNum"
-			:dot="realNameDot"
+			:title="realName.Title"
+			:subtitle="realName.Subtitle"
+			:badgeType="realName.BadgeType"
+			:messageNum="realName.MessageNum"
+			:dot="realName.Dot"
+			@click.native="turnTo('/pages/real_name/real_name')"
 			arrow=true
 			/>
 			<clickCard style="margin-bottom: 15px;"
@@ -25,8 +26,10 @@
 			iconSize="25"
 			iconColor="#3193fd"
 			title="等级"
-			subtitle="100积分待领取"
-			dot= true
+			:subtitle="grade.Subtitle"
+			:badgeType="grade.BadgeType"
+			:messageNum="grade.MessageNum"
+			:dot= "grade.Dot"
 			@click.native="turnTo('/pages/grade/grade')"
 			arrow=true
 			/>
@@ -35,28 +38,35 @@
 			iconSize="22"
 			iconColor="#fd7e31"
 			title="订单"
+			:subtitle="order.Subtitle"
+			:badgeType="order.BadgeType"
+			:messageNum="order.MessageNum"
+			:dot= "order.Dot"
+			@click.native="turnTo('/pages/order/order')"
 			arrow=true
 			/>
 			<clickCard
 			iconType="list"
 			iconSize="22"
-			iconColor="#a79af4"
-			 title="资产"
-			arrow=true
-			/>
-			<clickCard 
-			iconType="home-filled"
-			iconSize="22"
-			iconColor="#fce94c"
-			title="个人信息"
-			subtitle="查看详情"
+			iconColor="#bc4cfc"
+			title="资产"
+			:subtitle="property.Subtitle"
+			:badgeType="property.BadgeType"
+			:messageNum="property.MessageNum"
+			:dot= "property.Dot"
+			@click.native="turnTo('/pages/property/property')"
 			arrow=true
 			/>
 			<clickCard 
 			iconType="gear-filled"
 			iconSize="22"
-			iconColor="#bc4cfc"
+			iconColor="#f9e263"
 			title="设置"
+			:subtitle="set.Subtitle"
+			:badgeType="set.BadgeType"
+			:messageNum="set.MessageNum"
+			:dot= "set.Dot"
+			@click.native="turnTo('/pages/set/set')"
 			arrow=true
 			/>
 		</view>
@@ -72,11 +82,37 @@
 				username: '未设置名称',
 				usertel: '无',
 				userimage: '../../static/image/user/userimage.jpg',
-				realNameTitle: '请完成实名认证,体验更多服务',
-				realNameSubtitle: null,
-				realNameBadgeType:'error',
-				realNameMessageNum: 1,
-				realNameDot:false
+				realName:{
+					Title: '请完成实名认证,体验更多服务',
+					Subtitle: null,
+					BadgeType:'error',
+					MessageNum: 1,
+					Dot:false,
+				},
+				grade:{
+					Subtitle: '100积分待领取',
+					BadgeType:null,
+					MessageNum: null,
+					Dot:true,
+				},
+				order:{
+					Subtitle: null,
+					BadgeType:null,
+					MessageNum: null,
+					Dot:null,
+				},
+				property:{
+					Subtitle: null,
+					BadgeType:null,
+					MessageNum: null,
+					Dot:null,
+				},
+				set:{
+					Subtitle: null,
+					BadgeType:null,
+					MessageNum: null,
+					Dot:null,
+				}
 			};
 		},
 		components:{ clickCard, uniIcons },
@@ -85,7 +121,6 @@
 				uni.navigateTo({
 					url:urls
 				})
-				console.log('hello')
 			}
 		}
 	}
