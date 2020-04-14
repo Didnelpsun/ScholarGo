@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view class="deposit">
 		
 	</view>
 </template>
@@ -14,6 +14,8 @@
 	}
 </script>
 
-<style lang="scss" socped>
-
+<style lang="scss">
+.deposit{
+	
+}
 </style>

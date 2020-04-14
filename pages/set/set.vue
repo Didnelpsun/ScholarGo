@@ -14,6 +14,6 @@
 	}
 </script>
 
-<style lang="scss" socped>
+<style lang="scss">
 
 </style>

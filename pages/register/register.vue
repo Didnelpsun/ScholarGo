@@ -64,7 +64,7 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" socped>
 	.register {
 		padding: 4 * $space;
 		font-size: $uni-font-size-base;

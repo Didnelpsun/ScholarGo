@@ -16,22 +16,15 @@
 		name: "adver",
 		data() {
 			return {
-				advertisement: [{
-						"backgroundImage": "",
-						"words": ""
-					},
-					{
-						"backgroundImage": "",
-						"words": ""
-					}
-				],
-				arr: [1, 2, 3]
 			};
-		}
+		},
+		props:[
+			
+		]
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" socped>
 	swiper {
 		width: 100vw;
 		height: 45vh;
