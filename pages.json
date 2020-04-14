@@ -87,19 +87,27 @@
 			}
         },{
             "path" : "pages/set/set",
-            "style" : {}
+            "style" : {
+				"navigationBarTitleText": "设置"
+			}
         }
         ,{
             "path" : "pages/deposit/deposit",
-            "style" : {}
+            "style" : {
+				"navigationBarTitleText": "充值"
+			}
         }
         ,{
             "path" : "pages/cash_withdraw/cash_withdraw",
-            "style" : {}
+            "style" : {
+				"navigationBarTitleText": "提现"
+			}
         }
         ,{
             "path" : "pages/cash_detail/cash_detail",
-            "style" : {}
+            "style" : {
+				"navigationBarTitleText": "明细"
+			}
         }
     ],
 	"tabBar": {

@@ -31,7 +31,7 @@
 			},
 			'iconSize':{
 				type:Number,
-				default:0
+				default:22
 			},
 			'iconColor':{
 				type:String,
@@ -51,7 +51,7 @@
 			},
 			'badgeType':{
 				type:String,
-				default:null
+				default:'error'
 			},
 			'dot':{
 				type:Boolean,

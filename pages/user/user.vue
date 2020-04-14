@@ -35,7 +35,6 @@
 			/>
 			<clickCard
 			iconType="cart-filled"
-			iconSize="22"
 			iconColor="#fd7e31"
 			title="订单"
 			:subtitle="order.Subtitle"
@@ -47,7 +46,6 @@
 			/>
 			<clickCard
 			iconType="list"
-			iconSize="22"
 			iconColor="#bc4cfc"
 			title="资产"
 			:subtitle="property.Subtitle"
@@ -59,7 +57,6 @@
 			/>
 			<clickCard 
 			iconType="gear-filled"
-			iconSize="22"
 			iconColor="#f9e263"
 			title="设置"
 			:subtitle="set.Subtitle"
