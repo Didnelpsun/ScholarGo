@@ -12,6 +12,7 @@
 			</text>
 			<uniBadge :text="messageNum" :type="badgeType" size="small" v-if="messageNum" />
 			<view class="dot" v-if="dot"></view>
+			<uniIcons type="checkmarkempty" color="#a6e22e" size="20" v-if="check"></uniIcons>
 			<uniIcons type="arrowright" color="#999" size="20" v-if="arrow"></uniIcons>
 		</view>
 	</view>
@@ -31,7 +32,7 @@
 			},
 			'iconSize':{
 				type:Number,
-				default:22
+				default:25
 			},
 			'iconColor':{
 				type:String,
@@ -57,6 +58,10 @@
 				type:Boolean,
 				default:false
 			},
+			'check':{
+				type:Boolean,
+				default:false
+			},
 			'arrow':{
 				type:Boolean,
 				default:false
@@ -73,7 +78,7 @@
 	.clickCard {
 		background-color: $uni-bg-color;
 		width: 100vw;
-		height: 35px;
+		height: 45px;
 		border: solid 1px $uni-bg-color-grey;
 		display: flex;
 		flex-direction: row;

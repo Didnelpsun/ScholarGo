@@ -19,7 +19,7 @@
 				</view>
 			</view>
 		</view>
-		<view class="space" style="height: 30px;"/>
+		<view class="space" style="height: 40px;"/>
 	</view>
 </template>
 
@@ -83,7 +83,7 @@
 		position: fixed;
 		background-color: $uni-bg-color-grey;
 		width: 100vw;
-		height: 6 * $space;
+		height: 8 * $space;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -92,14 +92,14 @@
 	}
 
 	.searchimg {
-		width: 4 * $space;
-		height: 4 * $space;
+		width: 6 * $space;
+		height: 5 * $space;
 		margin: 0 $space 0;
 	}
 
 	.searchinput {
 		width: 90vw;
-		height: 6 * $space - 2 * $space;
+		height: 8 * $space - 2 * $space;
 		background-color: $uni-bg-color;
 		border-radius: 2vw;
 		padding-left: $space;
@@ -115,15 +115,15 @@
 	}
 
 	.calendar {
-		width: 4 * $space;
-		height: 4 * $space;
+		width: 6 * $space;
+		height: 6 * $space;
 		margin: 0 $space 0;
 	}
 
 	.calendarnum {
 		position: fixed;
 		padding-top: $space - 2px;
-		font-size: $uni-font-size-sssm;
+		font-size: $uni-font-size-sm;
 	}
 
 	.searchboard {

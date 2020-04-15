@@ -23,7 +23,7 @@
 			/>
 			<clickCard style="margin-bottom: 15px;"
 			iconType="contact-filled"
-			iconSize="25"
+			iconSize="28"
 			iconColor="#3193fd"
 			title="等级"
 			:subtitle="grade.Subtitle"
