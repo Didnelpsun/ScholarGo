@@ -1,21 +1,24 @@
 <template>
 	<view class="cash_withdraw">
+		<capitalTurn
+		buttonType="提现"
+		/>
 	</view>
 </template>
 
 <script>
+	import capitalTurn from "@/components/capital-turn/capital-turn.vue"
 	export default {
 		data() {
-			return {
-				
-			};
+			return {}
+		},
+		components:{
+			capitalTurn
 		}
 	}
 </script>
 
 <style lang="scss" scoped>
 .cash_withdraw{
-	font-size: $uni-font-size-base;
-	color: $uni-text-color;
 }
 </style>

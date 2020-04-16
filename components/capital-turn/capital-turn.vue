@@ -42,9 +42,9 @@
 			</view>
 		</view>
 		<view class="buttonView">
-			<view class="button">{{buttonType}}</view>
+			<view class="button" @click="showPass">{{buttonType}}</view>
 		</view>
-		<uniPopup ref="popup" type="bottom">
+		<uniPopup ref="showDetail" type="bottom">
 			<view class="popBoard">
 				<view style="height: 10px;"/>
 				<text>选择{{capitalType.value}}</text>
@@ -65,6 +65,12 @@
 				/>
 			</view>
 		</uniPopup>
+		<uni-popup ref="pass" type="center">
+			<view class="passwordBoard">
+				<input type="password" v-model="password" @blur="cleanPass"/>
+				<view class="button">确认</view>
+			</view>
+		</uni-popup>
 	</view>
 </template>
 
@@ -75,7 +81,7 @@
 		data() {
 			return {
 				check:{
-					cardCheck:true,
+					cardCheck:false,
 					zhifuCheck:false,
 					weixinCheck:false,
 					qqCheck:false,
@@ -98,7 +104,8 @@
 				],
 				qqCheck:[
 					['890',false]
-				]
+				],
+				password:''
 			};
 		},
 		props:{
@@ -111,31 +118,33 @@
 			clickCard,
 			uniPopup
 		},
-		mounted(){
+		mounted()
+		{
 			//初始化capitalType值
-			// let trueNum = 0;
-			// let i = 0;
-			// let _check = this.check;
-			// for(let key in _check){
-			// 	if(_check[key] === true){
-			// 		trueNum++;
-			// 		i++;
-			// 		if(trueNum === 1){
-			// 			this.capitalType = key;
-			// 			this.capTypeValue(key,this.capitalType.value);
-			// 		}
-			// 		if(trueNum > 1){
-			// 			_check[key] = false;
-			// 		}
-			// 	}
-			// 	if(trueNum === 0){
-			// 		for(key in _check){
-			// 			this.capitalType = key;
-			// 			this.capTypeValue(key,this.capitalType.value);
-			// 			break;
-			// 		}
-			// 	}
-			// }
+			let trueNum = 0;
+			let i = 0;
+			let _check = this.check;
+			for(let key in _check){
+				if(_check[key] === true){
+					trueNum++;
+					i++;
+					if(trueNum === 1){
+						this.capitalType.name = key;
+						this.capTypeValue(key,this.capitalType.value);
+					}
+					if(trueNum > 1){
+						_check[key] = false;
+					}
+				}
+				if(trueNum === 0){
+					for(key in _check){
+						this.capitalType.name = key;
+						this.capTypeValue(key,this.capitalType.value);
+						_check[key] = true;
+						break;
+					}
+				}
+			}
 		},
 		methods:{
 			//辅助方法
@@ -176,32 +185,17 @@
 			},
 			//
 			showDetail:function(type){
-				let _this = this;
-				_this.capitalType.name = type;
-				for(let key in _this.check){
+				this.capitalType.name = type;
+				for(let key in this.check){
 					if(key!==type)
-						_this.check[key] = false;
+						this.check[key] = false;
 					else
-						_this.check[key] = true;
+						this.check[key] = true;
 				}
-				_this.showCheck = _this[type];
-				// switch(type){
-				// 	case 'cardCheck':
-				// 		_this.capitalType.value = "银行卡";
-				// 		break;
-				// 	case 'zhifuCheck':
-				// 		_this.capitalType.value = "支付宝账号";
-				// 		break;
-				// 	case 'weixinCheck':
-				// 		_this.capitalType.value = "微信账号";
-				// 		break;
-				// 	case 'qqCheck':
-				// 		_this.capitalType.value = "QQ账号";
-				// 		break;
-				// }
-				_this.capTypeValue(type,_this.capitalType.value);
-				_this.checkBoolProps(_this.showCheck);
-				_this.$refs.popup.open();
+				this.showCheck = this[type];
+				this.capTypeValue(type,this.capitalType.value);
+				this.checkBoolProps(this.showCheck);
+				this.$refs.showDetail.open();
 			},
 			changeDetailCheck:function(index){
 				this.$set(this.showCheck[index],1,true);
@@ -210,6 +204,12 @@
 					if(i != index)
 						this.$set(this.showCheck[i],1,false);
 				}
+			},
+			showPass:function(){
+				this.$refs.pass.open();
+			},
+			cleanPass:function(){
+				this.password = '';
 			}
 		}
 	}
@@ -267,6 +267,21 @@
 	font-size: $uni-font-size-lg;
 	text{
 		margin: 10px;
+	}
+}
+.passwordBoard{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: $uni-bg-color;
+	font-size: 40rpx;
+	padding: 4 * $space;
+	border-radius: 1vw;
+	input{
+		width: 50vw;
+		border: solid 1px #c8c7cc;
+		border-radius: 0.5vw;
 	}
 }
 </style>
