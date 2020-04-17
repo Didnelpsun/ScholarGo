@@ -14,13 +14,16 @@
 		data :function() {
 			return{};
 		},
-		props: [
-			'name',
-			'photo',
-			'area',
-			'grade',
-			'notes'
-			],
+		props: {
+			'name':String,
+			'photo':String,
+			'area':String,
+			'grade':String,
+			'notes':{
+				Type:String,
+				default:''
+			}
+		},
 		components: {
 			uniCard
 		}
