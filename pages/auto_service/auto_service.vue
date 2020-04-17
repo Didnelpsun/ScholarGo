@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view class="auto">
 		<view>
 		<uni-grid :column="2">
 		    <uni-grid-item>			
@@ -50,11 +50,13 @@
 			/>
 			<click-card 
 			title="待处理问题"
+			badgeType="warning"
 			messageNum="2"
 			arrow=true
 			/>
 			<click-card
 			title="活动介绍"
+			badgeType="success"
 			messageNum="3"
 			arrow=true
 			/>
@@ -87,6 +89,10 @@
 </script>
 
 <style lang="scss">
+	.auto{
+		background-color: $uni-bg-color-darkg;
+		overflow-x: hidden;
+	}
 	.indexboard {
 		width: 50vw;
 		height: 50vh;

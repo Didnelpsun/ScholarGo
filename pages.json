@@ -5,162 +5,158 @@
 			"style": {
 				"navigationBarTitleText": "首页"
 			}
-		}
-		,{
-		    "path" : "pages/reward/reward",
-		    "style" : {
+		}, 
+		{
+			"path": "pages/reward/reward",
+			"style": {
 				"navigationBarTitleText": "悬赏贴中心"
 			}
-		}
-        ,{
-            "path" : "pages/plus/plus",
-            "style" : {
-				"navigationBarTitleText": "新建"
-			}
-        }		
-		,{
-		    "path" : "pages/user/user",
-		    "style" : {
-				"navigationStyle":"custom"
-			}
-		}
-        ,{
-            "path" : "pages/register/register",
-            "style" : {
-				"navigationBarTitleText": "每日签到"
-			}
-        } 
-		,{
-            "path" : "pages/will_help/will_help",
-            "style" : {
-				"navigationBarTitleText": "我愿帮助"
-			}
-        }
-        ,{
-            "path" : "pages/want_help/want_help",
-            "style" : {
-				"navigationBarTitleText": "我要求助"
-			}
-        }
-        ,{
-            "path" : "pages/study_want/study_want",
-            "style" : {
-				"navigationBarTitleText": "学习求助"
-			}
-        }
-        ,{
-            "path" : "pages/life_want/life_want",
-            "style" : {
-				"navigationBarTitleText": "生活求助"
-			}
-        },
+		}, 
 		{
-		    "path" : "pages/find/find",
-		    "style" : {
-				"navigationBarTitleText": "自主寻找中心"
-			}
-		}
-        ,{
-            "path" : "pages/user_main/user_main",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/real_name/real_name",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/grade/grade",
-            "style" : {
-				"navigationBarTitleText": "等级"
-			}
-        }
-        ,{
-            "path" : "pages/order/order",
-            "style" : {
-				"navigationBarTitleText": "我的服务订单"
-			}
-        }
-        ,{
-            "path" : "pages/property/property",
-            "style" : {
-				"navigationBarTitleText": "资产"
-			}
-        },{
-            "path" : "pages/set/set",
-            "style" : {
-				"navigationBarTitleText": "设置"
-			}
-        }
-        ,{
-            "path" : "pages/deposit/deposit",
-            "style" : {
-				"navigationBarTitleText": "充值"
-			}
-        }
-        ,{
-            "path" : "pages/cash_withdraw/cash_withdraw",
-            "style" : {
-				"navigationBarTitleText": "提现"
-			}
-        }
-        ,{
-            "path" : "pages/cash_detail/cash_detail",
-            "style" : {
-				"navigationBarTitleText": "明细"
-			}
-        }
-        ,{
-            "path" : "pages/account_and_safe/account_and_safe",
-            "style" : {
-				"navigationBarTitleText": "账号与安全"
-			}
-        }
-        ,{
-            "path" : "pages/currency/currency",
-            "style" : {
-				"navigationBarTitleText": "通用"
-		},
-            "path" : "pages/auto_service/auto_service",
-            "style" : {
+			"path": "pages/auto_service/auto_service",
+			"style": {
 				"navigationBarTitleText": "官方自助服务"
 			}
-        }
-    ],
+		},
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "pages/register/register",
+			"style": {
+				"navigationBarTitleText": "每日签到"
+			}
+		}, 
+		{
+			"path": "pages/will_help/will_help",
+			"style": {
+				"navigationBarTitleText": "我愿帮助"
+			}
+		}, 
+		{
+			"path": "pages/want_help/want_help",
+			"style": {
+				"navigationBarTitleText": "我要求助"
+			}
+		}, 
+		{
+			"path": "pages/study_want/study_want",
+			"style": {
+				"navigationBarTitleText": "学习求助"
+			}
+		}, 
+		{
+			"path": "pages/life_want/life_want",
+			"style": {
+				"navigationBarTitleText": "生活求助"
+			}
+		},
+		{
+			"path": "pages/find/find",
+			"style": {
+				"navigationBarTitleText": "自主寻找中心"
+			}
+		}, 
+		{
+			"path": "pages/user_main/user_main",
+			"style": {}
+		}, 
+		{
+			"path": "pages/real_name/real_name",
+			"style": {}
+		}, 
+		{
+			"path": "pages/grade/grade",
+			"style": {
+				"navigationBarTitleText": "等级"
+			}
+		}, 
+		{
+			"path": "pages/order/order",
+			"style": {
+				"navigationBarTitleText": "我的服务订单"
+			}
+		}, 
+		{
+			"path": "pages/property/property",
+			"style": {
+				"navigationBarTitleText": "资产"
+			}
+		}, 
+		{
+			"path": "pages/set/set",
+			"style": {
+				"navigationBarTitleText": "设置"
+			}
+		}, 
+		{
+			"path": "pages/deposit/deposit",
+			"style": {
+				"navigationBarTitleText": "充值"
+			}
+		}, 
+		{
+			"path": "pages/cash_withdraw/cash_withdraw",
+			"style": {
+				"navigationBarTitleText": "提现"
+			}
+		}, 
+		{
+			"path": "pages/cash_detail/cash_detail",
+			"style": {
+				"navigationBarTitleText": "明细"
+			}
+		}, 
+		{
+			"path": "pages/account_and_safe/account_and_safe",
+			"style": {
+				"navigationBarTitleText": "账号与安全"
+			}
+		}, 
+		{
+			"path": "pages/currency/currency",
+			"style": {
+				"navigationBarTitleText": "通用"
+			}
+		}
+	],
 	"tabBar": {
 		"color": "#888888",
-	    "selectedColor": "#ffaa00",
-	    "borderStyle": "black",
-	    "backgroundColor": "#FFFFFF",
-	    "list": [{
-	        "pagePath": "pages/index/index",
-	        "iconPath": "static/image/tabbar/indexh.png",
-	        "selectedIconPath": "static/image/tabbar/index.png",
-	        "text": "首页"
-	    },
-		{
-		    "pagePath": "pages/reward/reward",
-		    "iconPath": "static/image/tabbar/rewardh.png",
-			"selectedIconPath": "static/image/tabbar/reward.png",
-		    "text": "悬赏帖"
-		},
-		{
-		    "pagePath": "pages/auto_service/auto_service",
-		    "iconPath": "static/image/tabbar/plush.png",
-			"selectedIconPath": "static/image/tabbar/plus.png",
-			"text": ""
-		},
-		{
-	        "pagePath": "pages/find/find",
-	        "iconPath": "static/image/tabbar/findh.png",
-			"selectedIconPath": "static/image/tabbar/find.png",
-	        "text": "自主寻找"
-	    },
-		{
-	        "pagePath": "pages/user/user",
-	        "iconPath": "static/image/tabbar/userh.png",
-			"selectedIconPath": "static/image/tabbar/user.png",
-	        "text": "用户中心"
-	    }
+		"selectedColor": "#ffaa00",
+		"borderStyle": "black",
+		"backgroundColor": "#FFFFFF",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/image/tabbar/indexh.png",
+				"selectedIconPath": "static/image/tabbar/index.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/reward/reward",
+				"iconPath": "static/image/tabbar/rewardh.png",
+				"selectedIconPath": "static/image/tabbar/reward.png",
+				"text": "悬赏帖"
+			},
+			{
+				"pagePath": "pages/auto_service/auto_service",
+				"iconPath": "static/image/tabbar/plush.png",
+				"selectedIconPath": "static/image/tabbar/plus.png",
+				"text": ""
+			},
+			{
+				"pagePath": "pages/find/find",
+				"iconPath": "static/image/tabbar/findh.png",
+				"selectedIconPath": "static/image/tabbar/find.png",
+				"text": "自主寻找"
+			},
+			{
+				"pagePath": "pages/user/user",
+				"iconPath": "static/image/tabbar/userh.png",
+				"selectedIconPath": "static/image/tabbar/user.png",
+				"text": "用户中心"
+			}
 		]
 	},
 	"globalStyle": {
