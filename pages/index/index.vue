@@ -2,7 +2,7 @@
 	<view class="index">
 		<search-bar></search-bar>
 		<view class="content">
-			<adver-swiper/>
+			<adver/>
 			<navigator url="../want_help/want_help" hover-class="navigator-hover">
 				<view class="indexboard" style="background-color: #7e92dc;">
 					<text>我要求助</text>
@@ -24,8 +24,8 @@
 </template>
 
 <script>
-	import adverSwiper from '../../components/adver-swiper/adver-swiper.vue'
-	import searchBar from '../../components/search-bar/search-bar.vue'
+	import adver from '@/components/adver/adver.vue'
+	import searchBar from '@/components/search-bar/search-bar.vue'
 	export default {
 		data() {
 			return {}
@@ -35,7 +35,7 @@
 			// console.log(option.name); //打印出上个页面传递的参数。
 		},
 		components: {
-			adverSwiper,
+			adver,
 			searchBar
 		},
 		methods: {

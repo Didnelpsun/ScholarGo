@@ -1,7 +1,7 @@
 <template>
 	<view class="index">
 		<view class="content">
-			<adver-swiper/>
+			<adver/>
 			<uni-grid :column="2">
 			    <uni-grid-item>
 					<navigator url="../study_want/study_want" hover-class="navigator-hover">
@@ -29,7 +29,7 @@
 </template>
 
 <script>
-	import adverSwiper from '../../components/adver-swiper/adver-swiper.vue'
+	import adver from '../../components/adver/adver.vue'
 	import uniCalendar from '@/components/uni-calendar/uni-calendar.vue'
 	import uniGrid from "@/components/uni-grid/uni-grid.vue"
 	import uniGridItem from "@/components/uni-grid-item/uni-grid-item.vue"
@@ -48,7 +48,7 @@
 		},
 		components: {
 			uniCalendar,
-			adverSwiper,
+			adver,
 			uniGrid,
 			uniGridItem
 		},
