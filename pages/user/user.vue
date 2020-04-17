@@ -12,7 +12,7 @@
 			</view>
 		</view>
 		<view class="content">
-			<clickCard style="margin-bottom: 15px;"
+			<click-card style="margin-bottom: 15px;"
 			:title="realName.Title"
 			:subtitle="realName.Subtitle"
 			:badgeType="realName.BadgeType"
@@ -21,7 +21,7 @@
 			@click.native="turnTo('/pages/real_name/real_name')"
 			arrow=true
 			/>
-			<clickCard style="margin-bottom: 15px;"
+			<click-card style="margin-bottom: 15px;"
 			iconType="contact-filled"
 			iconSize="28"
 			iconColor="#3193fd"
@@ -33,7 +33,7 @@
 			@click.native="turnTo('/pages/grade/grade')"
 			arrow=true
 			/>
-			<clickCard
+			<click-card
 			iconType="cart-filled"
 			iconColor="#fd7e31"
 			title="订单"
@@ -44,7 +44,7 @@
 			@click.native="turnTo('/pages/order/order')"
 			arrow=true
 			/>
-			<clickCard
+			<click-card
 			iconType="list"
 			iconColor="#bc4cfc"
 			title="资产"
@@ -55,7 +55,7 @@
 			@click.native="turnTo('/pages/property/property')"
 			arrow=true
 			/>
-			<clickCard 
+			<click-card 
 			iconType="gear-filled"
 			iconColor="#f9e263"
 			title="设置"

@@ -1,7 +1,7 @@
 <template>
 	<view>
-		<uni-card :extra="area" :title="name" mode="style" :is-shadow="true" :thumbnail="photo"
-		 :note="grade">
+		<uni-card :extra="'擅长领域：' + area" :title="name" mode="style" :is-shadow="true" :thumbnail="photo"
+		 :note="'帮助者等级：' + grade">
 			{{notes}}
 		</uni-card>
 	</view>
@@ -11,7 +11,7 @@
 	import uniCard from '@/components/uni-card/uni-card.vue';
 	export default {
 		name: 'helperIntroduction',
-		data () {
+		data :function() {
 			return{};
 		},
 		props: [

@@ -1,6 +1,6 @@
 <template>
 	<view class="reward">
-		<searchBar></searchBar>
+		<search-bar></search-bar>
 		<view>
 			<uni-card title="悬赏贴" extra="小红" mode="basic">
 				<text>

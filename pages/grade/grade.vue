@@ -1,15 +1,15 @@
 <template>
 	<view class="grade">
 		<view class="space" />
-		<clickCard title="帮助者等级:" :subtitle="helpGrade" />
-		<clickCard title="帮助次数:" :subtitle="helpNum" />
+		<click-card title="帮助者等级:" :subtitle="helpGrade" />
+		<click-card title="帮助次数:" :subtitle="helpNum" />
 		<view class="textView">
 			<text>所享受待遇：</text>
 			<text class="textMain">{{text1}}</text>
 		</view>
 		<view class="space" />
-		<clickCard title="求助者等级:" :subtitle="helpGrade" />
-		<clickCard title="求助次数:" :subtitle="helpNum" />
+		<click-card title="求助者等级:" :subtitle="helpGrade" />
+		<click-card title="求助次数:" :subtitle="helpNum" />
 		<view class="textView">
 			<text>所享受待遇：</text>
 			<text class="textMain">{{text2}}</text>
