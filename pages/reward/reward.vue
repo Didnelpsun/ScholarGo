@@ -11,7 +11,7 @@
 					服务地点（线下）：
 				</text>
 			</uni-card>
-			<reward-stickers service="学习" name="小王" address="八号楼" money="15" is_online=false time="5"></reward-stickers>
+			<reward-stickers title="帮我完成实验报告" service="学习" name="小王" address="八号楼" money="15" is_online=false time="5"></reward-stickers>
 		</view>
 	</view>
 </template>

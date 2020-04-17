@@ -5,6 +5,7 @@
 			:extra="name"
 		    mode="basic"
 		>
+				<view v-if="title"><text>主题：{{title}}\n</text></view>
 				<view v-if="service"><text>服务类型：{{service}}\n</text></view>
 				<view v-if="money"><text>愿意支付金额：{{money}}\n</text></view>
 				<view v-if="time"><text>服务时长：{{time}}h\n</text></view>
@@ -27,6 +28,7 @@
 			return{};
 		},
 		props: {
+			'title': String,
 			'name': String,
 			'service':String,
 			'address':String,
