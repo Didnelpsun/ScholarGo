@@ -44,7 +44,7 @@
 		<view class="buttonView">
 			<view class="button" @click="showPass">{{buttonType}}</view>
 		</view>
-		<uniPopup ref="showDetail" type="bottom">
+		<uni-popup ref="showDetail" type="bottom">
 			<view class="popBoard">
 				<view style="height: 10px;"/>
 				<text>选择{{capitalType.value}}</text>
@@ -64,7 +64,7 @@
 				:title="'使用新的'+capitalType.value+'支付'"
 				/>
 			</view>
-		</uniPopup>
+		</uni-popup>
 		<uni-popup ref="pass" type="center">
 			<view class="passwordBoard">
 				<input type="password" v-model="password" @blur="cleanPass"/>
