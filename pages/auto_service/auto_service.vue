@@ -20,21 +20,44 @@
 		    </uni-grid-item>
 		</uni-grid>
 		</view>
-		<view>
-			<uni-list>
-			    <uni-list-item title="我的服务进度" :show-badge="true" badge-text="查看所有 "></uni-list-item>
-			</uni-list>
+		<view style="margin-bottom: 10px;">
+			<click-card
+			title="我的服务进度"
+			arrow=true
+			/>
 		</view>
 		<view>
-			<uni-list>
-			    <uni-list-item title="我们的服务态度"></uni-list-item>
-			    <uni-list-item title="常见问题"></uni-list-item>
-			    <uni-list-item title="售后问题" badge-text="12"></uni-list-item>
-			    <uni-list-item title="我想退款" :show-badge="true" badge-text="12"></uni-list-item>
-				<uni-list-item title="服务有问题" :show-badge="true" badge-text="12"></uni-list-item>
-				<uni-list-item title="待处理问题" badge-text="12"></uni-list-item>
-				<uni-list-item title="活动介绍" badge-text="12"></uni-list-item>
-			</uni-list>
+			<click-card
+			title="我们的服务态度"
+			arrow=true
+			/>
+			<click-card 
+			title="常见问题"
+			arrow=true
+			/>
+			<click-card
+			title="售后问题"
+			arrow=true
+			/>
+			<click-card
+			title="我想退款"
+			arrow=true
+			/>
+			<click-card 
+			title="服务有问题"
+			messageNum="1"
+			arrow=true
+			/>
+			<click-card 
+			title="待处理问题"
+			messageNum="2"
+			arrow=true
+			/>
+			<click-card
+			title="活动介绍"
+			messageNum="3"
+			arrow=true
+			/>
 		</view>
 	</view>
 </template>
@@ -44,6 +67,7 @@
 	import uniGridItem from "@/components/uni-grid-item/uni-grid-item.vue"
 	import uniList from "@/components/uni-list/uni-list.vue"
 	import uniListItem from "@/components/uni-list-item/uni-list-item.vue"
+	import clickCard from "@/components/click-card/click-card.vue"
 	export default {
 		components: {
 			uniGrid,
