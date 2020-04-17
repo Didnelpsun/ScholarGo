@@ -1,6 +1,6 @@
 <template>
 	<view class="deposit">
-		<capitalTurn 
+		<capital-turn 
 		buttonType="充值"
 		/>
 	</view>

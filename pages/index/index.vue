@@ -1,8 +1,8 @@
 <template>
 	<view class="index">
-		<searchBar></searchBar>
+		<search-bar></search-bar>
 		<view class="content">
-			<adverSwiper />
+			<adver-swiper/>
 			<navigator url="../want_help/want_help" hover-class="navigator-hover">
 				<view class="indexboard" style="background-color: #7e92dc;">
 					<text>我要求助</text>

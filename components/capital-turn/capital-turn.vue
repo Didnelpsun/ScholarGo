@@ -1,7 +1,7 @@
 <template>
 	<view class="capitalTurn">
 		<view style="font-size: 32rpx; margin: 10px;padding-top: 10px;">充值方式：</view>
-		<clickCard
+		<click-card
 		iconType="shop"
 		iconColor="#fd4931"
 		title="银行卡"
@@ -9,7 +9,7 @@
 		arrow=true
 		@click.native="showDetail('cardCheck')"
 		/>
-		<clickCard
+		<click-card
 		iconType="upload-filled"
 		iconColor="#316ffd"
 		title="支付宝"
@@ -17,7 +17,7 @@
 		arrow=true
 		@click.native="showDetail('zhifuCheck')"
 		/>
-		<clickCard
+		<click-card
 		iconType="weixin"
 		iconColor="green"
 		title="微信"
@@ -25,7 +25,7 @@
 		arrow=true
 		@click.native="showDetail('weixinCheck')"
 		/>
-		<clickCard
+		<click-card
 		iconType="qq"
 		iconColor="#5cd2f9"
 		title="QQ"
@@ -58,7 +58,7 @@
 					@click.native="changeDetailCheck(index)"
 					/>
 				</template>
-				<clickCard
+				<click-card
 				iconType="plus-filled"
 				iconColor="#888"
 				:title="'使用新的'+capitalType.value+'支付'"
@@ -78,6 +78,7 @@
 	import clickCard from "@/components/click-card/click-card.vue"
 	import uniPopup from "@/components/uni-popup/uni-popup.vue"
 	export default {
+		name:'capitalTurn',
 		data() {
 			return {
 				check:{

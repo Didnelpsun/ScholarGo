@@ -1,6 +1,6 @@
 <template>
 	<view class="cash_withdraw">
-		<capitalTurn
+		<capital-turn
 		buttonType="提现"
 		/>
 	</view>

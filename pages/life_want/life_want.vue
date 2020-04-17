@@ -1,7 +1,7 @@
 <template>
 	<view class="index">
 		<view class="content">
-			<adverSwiper/>
+			<adver-swiper/>
 			<uni-grid :column="2">
 				<navigator url="../want_help/want_help" hover-class="navigator-hover">
 			    <uni-grid-item>

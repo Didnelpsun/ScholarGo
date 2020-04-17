@@ -22,6 +22,7 @@
 	import uniBadge from "@/components/uni-badge/uni-badge.vue"
 	import uniIcons from "@/components/uni-icons/uni-icons.vue"
 	export default {
+		name:'clickCard',
 		data() {
 			return {};
 		},
