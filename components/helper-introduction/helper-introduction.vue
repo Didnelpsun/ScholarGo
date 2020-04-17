@@ -8,7 +8,8 @@
 </template>
 
 <script>
-	import uniCard from '@/components/uni-card/uni-card.vue';
+	import uniCard from '@/components/uni-card/uni-card.vue'
+	import uniRate from '@/components/uni-rate/uni-rate.vue'
 	export default {
 		name: 'helperIntroduction',
 		data :function() {
@@ -25,7 +26,8 @@
 			}
 		},
 		components: {
-			uniCard
+			uniCard,
+			uniRate
 		}
 	}
 </script>

@@ -80,13 +80,13 @@
 		height: $bage-height;
 		line-height: $bage-height;
 		color: $uni-text-color;
-		border-radius: 50%;
+		border-radius: 100px;
 		background-color: $uni-bg-color-hover;
 		background-color: transparent;
 		text-align: center;
 		font-family: 'Helvetica Neue', Helvetica, sans-serif;
 		font-size: $bage-size;
-		// padding: 0px 2px;
+		padding: 0px 6px;
 	}
 
 	.uni-badge--inverted {
