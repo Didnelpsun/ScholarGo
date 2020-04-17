@@ -8,21 +8,26 @@
 </template>
 
 <script>
-	import uniCard from '@/components/uni-card/uni-card.vue';
+	import uniCard from '@/components/uni-card/uni-card.vue'
+	import uniRate from '@/components/uni-rate/uni-rate.vue'
 	export default {
 		name: 'helperIntroduction',
 		data :function() {
 			return{};
 		},
-		props: [
-			'name',
-			'photo',
-			'area',
-			'grade',
-			'notes'
-			],
+		props: {
+			'name':String,
+			'photo':String,
+			'area':String,
+			'grade':String,
+			'notes':{
+				Type:String,
+				default:''
+			}
+		},
 		components: {
-			uniCard
+			uniCard,
+			uniRate
 		}
 	}
 </script>

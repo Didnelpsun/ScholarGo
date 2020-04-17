@@ -11,7 +11,16 @@
 					服务地点（线下）：
 				</text>
 			</uni-card>
-			<reward-stickers service="学习" name="小王" address="八号楼" money="15" :is_online=bool time="5"></reward-stickers>
+			<reward-stickers 
+			title="帮我完成实验报告"
+			service="学习"
+			name="小王" 
+			address="八号楼" 
+			money="15" 
+			:is_online='is_online' 
+			time="5" 
+			details="帮忙写信息管理学院2019级C语言课程实验报告">
+			</reward-stickers>
 		</view>
 	</view>
 </template>
@@ -23,7 +32,7 @@
 	export default {
 		data() {
 			return {
-				bool:false
+				is_online:false
 			}
 		},
 		onLoad: function(option) { //option为object类型，会序列化上个页面传递的参数

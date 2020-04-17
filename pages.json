@@ -119,6 +119,10 @@
             "path" : "pages/currency/currency",
             "style" : {
 				"navigationBarTitleText": "通用"
+		},
+            "path" : "pages/auto_service/auto_service",
+            "style" : {
+				"navigationBarTitleText": "官方自助服务"
 			}
         }
     ],
@@ -140,7 +144,7 @@
 		    "text": "悬赏帖"
 		},
 		{
-		    "pagePath": "pages/plus/plus",
+		    "pagePath": "pages/auto_service/auto_service",
 		    "iconPath": "static/image/tabbar/plush.png",
 			"selectedIconPath": "static/image/tabbar/plus.png",
 			"text": ""
