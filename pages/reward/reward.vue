@@ -4,23 +4,14 @@
 		<view>
 			<uni-card title="悬赏贴" extra="小红" mode="basic">
 				<text>
-					服务类型：\n
-					愿意支付金额：\n
-					服务时长：\n
-					线上or线下：\n
-					服务地点（线下）：\n
+					服务类型：
+					愿意支付金额：
+					服务时长：
+					线上or线下：
+					服务地点（线下）：
 				</text>
 			</uni-card>
-			<uni-card title="悬赏贴" extra="小明" mode="basic">
-				<text>
-					服务类型：\n
-					愿意支付金额：\n
-					服务时长：\n
-					线上or线下：\n
-					服务地点（线下）：\n
-				</text>
-			</uni-card>
-			<reward-stickers service="学习" name="小王" address="八号楼" money="15"></reward-stickers>
+			<reward-stickers service="学习" name="小王" address="八号楼" money="15" is_online=false time="5"></reward-stickers>
 		</view>
 	</view>
 </template>
