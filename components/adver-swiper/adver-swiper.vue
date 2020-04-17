@@ -18,17 +18,6 @@
 		props:{
 			urlArray:Array
 		},
-		// methods:{
-		// 	urlTrans:function(array){
-		// 		let i = 0;
-		// 		for(;i < array.length; i++){
-		// 			this.$set(array,i,"background-image: url('" + array[i] + "');");
-		// 		}
-		// 	}
-		// },
-		// mounted() {
-		// 	this.urlTrans(this.urlArray);
-		// }
 	}
 </script>
 

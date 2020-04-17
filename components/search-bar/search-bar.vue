@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<view class="search">
-			<image src="../../static/image/index/search.png" class="searchimg"></image>
+			<image src="../../static/image/index/search.png" class="searchimg" v-show="calendarShow"></image>
 			<input type="text" placeholder="请输入关键字" class="searchinput" confirm-type="search" @focus="startSearch" @blur="startSearch" />
 			<view class="calendarholder" @click="TurntoRegister">
 				<image src="../../static/image/index/calendar.png" class="calendar"  v-show="calendarShow"></image>
@@ -36,6 +36,7 @@
 		},
 		methods: {
 			startSearch: function() {
+				//这里无法使用箭头函数
 				this.calendarShow = !this.calendarShow;
 				let _this = this;
 				let height = _this.height;
@@ -98,7 +99,7 @@
 	}
 
 	.searchinput {
-		width: 90vw;
+		width: 95vw;
 		height: 8 * $space - 2 * $space;
 		background-color: $uni-bg-color;
 		border-radius: 2vw;

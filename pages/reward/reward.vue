@@ -20,7 +20,7 @@
 					服务地点（线下）：\n
 				</text>
 			</uni-card>
-			<reward-stickers service="学习" name="小王" address="八号楼"></reward-stickers>
+			<reward-stickers service="学习" name="小王" address="八号楼" money="15"></reward-stickers>
 		</view>
 	</view>
 </template>
@@ -40,6 +40,7 @@
 		},
 		components: {
 			uniCard,
+			rewardSticker,
 			searchBar
 		},
 		mounted() {}
