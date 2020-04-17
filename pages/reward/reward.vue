@@ -11,7 +11,7 @@
 					服务地点（线下）：
 				</text>
 			</uni-card>
-			<reward-stickers service="学习" name="小王" address="八号楼" money="15" is_online=false time="5"></reward-stickers>
+			<reward-stickers service="学习" name="小王" address="八号楼" money="15" :is_online=bool time="5"></reward-stickers>
 		</view>
 	</view>
 </template>
@@ -23,6 +23,7 @@
 	export default {
 		data() {
 			return {
+				bool:false
 			}
 		},
 		onLoad: function(option) { //option为object类型，会序列化上个页面传递的参数

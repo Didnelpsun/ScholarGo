@@ -15,15 +15,15 @@
 						<text class="bold">交易额：￥{{item.money}}</text>
 					</view>
 					<view class="row">
-						<text>发起者：{{item.user1}}</text>
-						<text>接受者：{{item.user2}}</text>
+						<text>发起者：{{item.userId1}}</text>
+						<text>接受者：{{item.userId2}}</text>
 					</view>
 					<view class="row">
 						<text>服务类型：{{item.type}}</text>
 						<text v-if="online">开展类型：线上</text>
 						<text v-if="!online">开展类型：线下</text>
 					</view>
-					<text>地址：{{item.address}}</text>
+					<text v-if="!online">地址：{{item.address}}</text>
 				</view>
 			</view>
 		</template>
@@ -40,8 +40,8 @@
 						title:'帮忙学习',
 						startDate:'2020-04-16',
 						endDate:'2020-04-17',
-						user1:'Didnelpsun',
-						user2:'LSY',
+						userId1:'Didnelpsun',
+						userId2:'LSY',
 						type:'补习',
 						money:12,
 						fee:0.7,
@@ -65,7 +65,7 @@
 	}
 	.space{
 		height: 2 * $space;
-		background-color: $uni-bg-color-grey;
+		background-color: $uni-bg-color-darkg;
 	}
 	.detailBoard{
 		padding: 2 * $space;
