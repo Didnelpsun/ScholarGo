@@ -102,33 +102,12 @@
 <script>
 	import uniGrid from "@/components/uni-grid/uni-grid.vue"
 	import uniGridItem from "@/components/uni-grid-item/uni-grid-item.vue"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> b663329e40358a5232374bc48091fae738bc1e64
-=======
->>>>>>> b663329e40358a5232374bc48091fae738bc1e64
-	import uniListItem from "@/components/uni-list-item/uni-list-item.vue"
->>>>>>> b663329e40358a5232374bc48091fae738bc1e64
 	import clickCard from "@/components/click-card/click-card.vue"
 	export default {
 		components: {
 			uniGrid,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 			uniGridItem,
-=======
-			uniGridItem
->>>>>>> b663329e40358a5232374bc48091fae738bc1e64
-=======
-			uniGridItem
->>>>>>> b663329e40358a5232374bc48091fae738bc1e64
-=======
-			uniGridItem
->>>>>>> b663329e40358a5232374bc48091fae738bc1e64
+			clickCard
 			},
 		data() {
 			return {
