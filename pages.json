@@ -145,18 +145,6 @@
 				"navigationBarTitleText": "学习帮助"
 			}
         }
-        ,{
-            "path" : "pages/life_will/life_will",
-            "style" : {
-				"navigationBarTitleText": "生活帮助"
-			}
-        }
-        ,{
-            "path" : "pages/study_will/study_will",
-            "style" : {
-				"navigationBarTitleText": "学习帮助"
-			}
-        }
     ],
 	"tabBar": {
 		"color": "#888888",
