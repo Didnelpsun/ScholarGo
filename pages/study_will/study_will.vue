@@ -3,26 +3,21 @@
 		<view class="content">
 			<adver/>
 			<uni-grid :column="2">
+				<navigator url="../want_help/want_help" hover-class="navigator-hover">
 			    <uni-grid-item>
-					<navigator url="../study_will/study_will" hover-class="navigator-hover">
-					<view class="indexboard" style="background-color: #7e92dc;">
-						<text>学习</text>
-						<view class="indexborder">
-							<image src="../../static/image/index/answeer.png" class="indexImg"></image>
-						</view>
+					<view class="indexboard" style="background-color: #7e92dc;">	
+						<text>发布悬赏贴\n等待帮助者接单</text>
 					</view>
-					</navigator>
 			    </uni-grid-item>
+				</navigator>
+				<navigator url="../find/find" hover-class="navigator-hover">
 			    <uni-grid-item>	
-					<navigator url="../life_will/life_will" hover-class="navigator-hover">
 					<view class="indexboard" style="background-color: #9477f3;">
-			        	<text>生活</text>
-			        	<view class="indexborder">
-		                    <image src="../../static/image/index/ask.png" class="indexImg"></image>
-						</view>
+			        	<text>自主寻找\n立刻解决问题</text>
+						<uni-icons type="contact" size="30"></uni-icons>
 					</view>
-					</navigator>
 			    </uni-grid-item>
+				</navigator>
 			</uni-grid>
 		</view>
 	</view>
@@ -33,6 +28,7 @@
 	import uniCalendar from '@/components/uni-calendar/uni-calendar.vue'
 	import uniGrid from "@/components/uni-grid/uni-grid.vue"
 	import uniGridItem from "@/components/uni-grid-item/uni-grid-item.vue"
+	import uniIcons from "@/components/uni-icons/uni-icons.vue"
 	export default {
 		data() {
 			return {
@@ -50,7 +46,8 @@
 			uniCalendar,
 			adver,
 			uniGrid,
-			uniGridItem
+			uniGridItem,
+			uniIcons
 		},
 		methods: {
 			TurntoRegister: function() {
@@ -73,33 +70,22 @@
 	.index {
 		font-size: $uni-font-size-base;
 	}
-	
+
 	.content {
 		// height: 150vh;
 	}
-	
+
 	.indexboard {
-		width: 50vw;
-		height: 40vh;
+		margin: 40px 20px;
+		width: 40vw;
+		height: 30vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		color: $uni-text-color-inverse;
 		font-size: $uni-font-size-llg;
 	}
-	
-	.indexborder {
-		width: 60px;
-		height: 60px;
-		background-color: $uni-bg-color;
-		border-radius: 50%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		margin-left: 2 * $space;
-	}
-	
+
 	.indexImg {
 		width: 40px;
 		height: 40px;

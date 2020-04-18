@@ -102,15 +102,12 @@
 <script>
 	import uniGrid from "@/components/uni-grid/uni-grid.vue"
 	import uniGridItem from "@/components/uni-grid-item/uni-grid-item.vue"
-	import uniList from "@/components/uni-list/uni-list.vue"
 	import uniListItem from "@/components/uni-list-item/uni-list-item.vue"
 	import clickCard from "@/components/click-card/click-card.vue"
 	export default {
 		components: {
 			uniGrid,
-			uniGridItem,
-			uniList,
-			uniListItem
+			uniGridItem
 			},
 		data() {
 			return {
@@ -166,7 +163,11 @@
 			}
 		},
 		methods: {
-			
+			turnTo:(urls)=>{
+				uni.navigateTo({
+					url:urls
+				})
+			}
 		}
 	}
 </script>

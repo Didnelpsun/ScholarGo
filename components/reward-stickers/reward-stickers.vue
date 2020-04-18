@@ -58,6 +58,9 @@
 			cancel() {
 				this.$refs.popup.close()
 			},
+			change(e) {
+				console.log('是否打开:' + e.show)
+			}
 		},
 		components: {
 			uniCard,
