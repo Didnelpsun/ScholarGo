@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view class="auto">
 		<view>
 		<uni-grid :column="2">
 		    <uni-grid-item>			
@@ -172,6 +172,10 @@
 </script>
 
 <style lang="scss">
+	.auto{
+		background-color: $uni-bg-color-darkg;
+		overflow-x: hidden;
+	}
 	.indexboard {
 		width: 50vw;
 		height: 50vh;
