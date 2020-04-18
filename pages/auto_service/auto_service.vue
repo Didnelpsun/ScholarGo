@@ -22,42 +22,77 @@
 		</view>
 		<view style="margin-bottom: 10px;">
 			<click-card
-			title="我的服务进度"
+			:title="schedule.Title"
+			:subtitle="schedule.Subtitle"
+			:badgeType="schedule.BadgeType"
+			:messageNum="schedule.MessageNum"
+			:dot="schedule.Dot"
+			@click.native="turnTo('/pages/real_name/real_name')"
 			arrow=true
 			/>
 		</view>
 		<view>
 			<click-card
-			title="我们的服务态度"
+			:title="serviceAttitude.Title"
+			:subtitle="serviceAttitude.Subtitle"
+			:badgeType="serviceAttitude.BadgeType"
+			:messageNum="serviceAttitude.MessageNum"
+			:dot="serviceAttitude.Dot"
+			@click.native="turnTo('/pages/real_name/real_name')"
 			arrow=true
 			/>
 			<click-card 
-			title="常见问题"
+			:title="trouble.Title"
+			:subtitle="trouble.Subtitle"
+			:badgeType="trouble.BadgeType"
+			:messageNum="trouble.MessageNum"
+			:dot="trouble.Dot"
+			@click.native="turnTo('/pages/real_name/real_name')"
 			arrow=true
 			/>
 			<click-card
-			title="售后问题"
+			:title="afterSalesQuestion.Title"
+			:subtitle="afterSalesQuestion.Subtitle"
+			:badgeType="afterSalesQuestion.BadgeType"
+			:messageNum="afterSalesQuestion.MessageNum"
+			:dot="afterSalesQuestion.Dot"
+			@click.native="turnTo('/pages/real_name/real_name')"
 			arrow=true
 			/>
 			<click-card
-			title="我想退款"
+			:title="refund.Title"
+			:subtitle="refund.Subtitle"
+			:badgeType="refund.BadgeType"
+			:messageNum="refund.MessageNum"
+			:dot="refund.Dot"
+			@click.native="turnTo('/pages/real_name/real_name')"
 			arrow=true
 			/>
 			<click-card 
-			title="服务有问题"
-			messageNum="1"
+			:title="serviceQuestion.Title"
+			:subtitle="serviceQuestion.Subtitle"
+			:badgeType="serviceQuestion.BadgeType"
+			:messageNum="serviceQuestion.MessageNum"
+			:dot="serviceQuestion.Dot"
+			@click.native="turnTo('/pages/real_name/real_name')"
 			arrow=true
 			/>
 			<click-card 
-			title="待处理问题"
-			badgeType="warning"
-			messageNum="2"
+			:title="pendingIssue.Title"
+			:subtitle="pendingIssue.Subtitle"
+			:badgeType="pendingIssue.BadgeType"
+			:messageNum="pendingIssue.MessageNum"
+			:dot="pendingIssue.Dot"
+			@click.native="turnTo('/pages/real_name/real_name')"
 			arrow=true
 			/>
 			<click-card
-			title="活动介绍"
-			badgeType="success"
-			messageNum="3"
+			:title="activityDescription.Title"
+			:subtitle="activityDescription.Subtitle"
+			:badgeType="activityDescription.BadgeType"
+			:messageNum="activityDescription.MessageNum"
+			:dot="activityDescription.Dot"
+			@click.native="turnTo('/pages/real_name/real_name')"
 			arrow=true
 			/>
 		</view>
@@ -67,23 +102,93 @@
 <script>
 	import uniGrid from "@/components/uni-grid/uni-grid.vue"
 	import uniGridItem from "@/components/uni-grid-item/uni-grid-item.vue"
-	import uniList from "@/components/uni-list/uni-list.vue"
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> b663329e40358a5232374bc48091fae738bc1e64
+=======
+>>>>>>> b663329e40358a5232374bc48091fae738bc1e64
 	import uniListItem from "@/components/uni-list-item/uni-list-item.vue"
+>>>>>>> b663329e40358a5232374bc48091fae738bc1e64
 	import clickCard from "@/components/click-card/click-card.vue"
 	export default {
 		components: {
 			uniGrid,
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 			uniGridItem,
-			uniList,
-			uniListItem
+=======
+			uniGridItem
+>>>>>>> b663329e40358a5232374bc48091fae738bc1e64
+=======
+			uniGridItem
+>>>>>>> b663329e40358a5232374bc48091fae738bc1e64
+=======
+			uniGridItem
+>>>>>>> b663329e40358a5232374bc48091fae738bc1e64
 			},
 		data() {
 			return {
-				
+				schedule:{
+					Title:"服务进度",
+					Subtitle: null,
+					BadgeType:'success',
+					MessageNum:null,
+					Dot:false,
+				},serviceAttitude:{
+					Title:"服务态度",
+					Subtitle: null,
+					BadgeType:'success',
+					MessageNum:null,
+					Dot:false,
+				},trouble:{
+					Title:"常见问题",
+					Subtitle: null,
+					BadgeType:'success',
+					MessageNum: null,
+					Dot:false,
+				},afterSalesQuestion:{
+					Title:"售后问题",
+					Subtitle: null,
+					BadgeType:'success',
+					MessageNum: null,
+					Dot:false,
+				},refund:{
+					Title:"退款",
+					Subtitle: null,
+					BadgeType:'success',
+					MessageNum: 1,
+					Dot:false,
+				},serviceQuestion:{
+					Title:"服务问题",
+					Subtitle: null,
+					BadgeType:'success',
+					MessageNum: null,
+					Dot:false,
+				},pendingIssue:{
+					Title:"待处理问题",
+					Subtitle: null,
+					BadgeType:'success',
+					MessageNum: 1,
+					Dot:false,
+				},activityDescription:{
+					Title:"活动介绍",
+					Subtitle: null,
+					BadgeType:'success',
+					MessageNum: 2,
+					Dot:false,
+				}	
 			}
 		},
 		methods: {
-			
+			turnTo:(urls)=>{
+				uni.navigateTo({
+					url:urls
+				})
+			}
 		}
 	}
 </script>
