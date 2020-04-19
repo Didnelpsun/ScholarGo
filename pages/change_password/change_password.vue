@@ -24,7 +24,9 @@
 		data() {
 			return {
 				userId:'Didnelpsun',
-				oldPassword:''
+				oldPassword:'',
+				newPass1:'',
+				newPass2:''
 			};
 		},
 		components:{
@@ -35,7 +37,7 @@
 
 <style lang="scss" scoped>
 .password{
-	background-color: $uni-bg-color-darkg;
+	background-color: $uni-bg-color-grey;
 	height: 100vh;
 	font-size: $uni-font-size-lg;
 	padding: 4 * $space 0 4 * $space;

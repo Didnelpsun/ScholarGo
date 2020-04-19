@@ -37,12 +37,10 @@
 </script>
 
 <style lang="scss" socped>
-	.grade {
-		background-color: $uni-bg-color-darkg;
+	.grade{
+		background-color: $uni-bg-color-grey;
 		height: 100vh;
-		border: solid 1px $uni-bg-color-grey;
 	}
-
 	.space {
 		height: 6 * $space;
 	}

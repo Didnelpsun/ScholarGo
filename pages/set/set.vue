@@ -1,5 +1,5 @@
 <template>
-	<view class="set">
+	<view class="darkfullbg">
 		<view class="userBoard">
 			<view class="user">
 				<view style="display: flex;flex-direction: row;align-items: flex-start;">
@@ -45,18 +45,14 @@
 </script>
 
 <style lang="scss" scoped>
-.set{
-	background-color: $uni-bg-color-darkg;
-	font-size: $uni-font-size-base;
-	height: 100vh;
-}
 .userBoard{
-	background-color: $uni-bg-color-darkg;
+	background-color: $uni-bg-color-grey;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	height: 20vh;
+	font-size: $uni-font-size-base;
 }
 .user{
 	height: 15vh;

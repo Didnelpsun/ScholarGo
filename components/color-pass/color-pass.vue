@@ -2,8 +2,8 @@
 	<view class="color">
 		<text :style="'padding: 0 '+ padding +' 0;'">{{title}}</text>
 		<input :password="inputType" v-model="password" @input="change" maxlength="20"/>
-		<image :style="'right: ' + eye +';'" v-show="show" src="../../static/image/user/eye_open.png" @click="showPass"/>
-		<image :style="'right: ' + eye +';'" v-show="!show" src="../../static/image/user/eye_close.png" @click="showPass"/>
+		<image :style="'right: ' + eye +';'" v-show="show" src="../../static/image/user/eye-open.png" @click="showPass"/>
+		<image :style="'right: ' + eye +';'" v-show="!show" src="../../static/image/user/eye-close.png" @click="showPass"/>
 		<view class="dot" :style="'background-color: '+dotColor+' ; right: ' + padding +';'"></view>
 	</view>
 </template>
@@ -15,7 +15,6 @@
 			return {
 				dotColor:'red',
 				userId:'',
-				password:'',
 				inputType:'password',
 				show:false
 			};
