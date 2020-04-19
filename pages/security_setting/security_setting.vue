@@ -1,5 +1,5 @@
 <template>
-	<view class="darkfullbg">
+	<view class="security">
 		<click-card
 		title="微信号"
 		:subtitle="weixin"
@@ -32,4 +32,8 @@
 </script>
 
 <style lang="scss" scoped>
+	.security{
+		height: 100vh;
+		background-color: $uni-bg-color-grey;
+	}
 </style>
