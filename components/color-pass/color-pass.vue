@@ -100,8 +100,8 @@
 }
 image{
 	position: absolute;
-	width: 20px;
-	height: 20px;
+	width: 15px;
+	height: 15px;
 }
 .dot{
 	position: absolute;
