@@ -42,6 +42,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	overflow: hidden;
 }
 .grey{
 	color: $uni-text-color-grey;
