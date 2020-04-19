@@ -1,14 +1,13 @@
 <template>
 	<view>
-		<adver-swiper
-		:urlArray=array
-		/>
+		<adver-swiper :urlArray="array"/>
 	</view>
 </template>
 
 <script>
 	import adverSwiper from '@/components/adver-swiper/adver-swiper.vue'
 	export default {
+		name:'adver',
 		data() {
 			return {
 				array:[

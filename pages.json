@@ -121,6 +121,18 @@
 				"navigationBarTitleText": "通用"
 			}
 		}
+	    ,{
+            "path" : "pages/change_mobile_phone/change_mobile_phone",
+            "style" : {
+				"navigationBarTitleText": "绑定手机号"
+			}
+        }
+        ,{
+            "path" : "pages/change_password/change_password",
+            "style" : {
+				"navigationBarTitleText": "修改密码"
+			}
+        }
         ,{
             "path" : "pages/life_will/life_will",
             "style" : {

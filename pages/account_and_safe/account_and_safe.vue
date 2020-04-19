@@ -1,8 +1,8 @@
 <template>
 	<view class="account">
 		<click-card title="账号" :subtitle="userId" />
-		<click-card title="手机号" :subtitle="telphone" arrow=true />
-		<click-card title="密码" arrow=true />
+		<click-card title="手机号" :subtitle="telephone" arrow=true @click.native="turnTo('/pages/change_mobile_phone/change_mobile_phone')"/>
+		<click-card title="密码" arrow=true @click.native="turnTo('/pages/change_password/change_password')"/>
 		<click-card title="设备管理" arrow=true />
 		<click-card title="安全设置" arrow=true />
 		<click-card title="紧急联系人" arrow=true />
@@ -16,11 +16,18 @@
 			return {
 				userId: '',
 				username: '',
-				telphone:'',
+				telephone:'',
 			};
 		},
 		components:{
 			clickCard
+		},
+		methods:{
+			turnTo:function(url){
+				uni.navigateTo({
+					url:url
+				})
+			}
 		}
 	}
 </script>

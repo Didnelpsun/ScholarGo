@@ -19,7 +19,7 @@
 		/>
 		<click-card
 		iconType="weixin"
-		iconColor="green"
+		iconColor="#73ab4a"
 		title="微信"
 		:check="check.weixinCheck"
 		arrow=true

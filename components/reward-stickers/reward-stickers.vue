@@ -14,7 +14,7 @@
 					<text>
 						线上or线下：线下
 						服务地点（线下）：{{ address }}\n
-					</text> 
+					</text>
 				</view>
 				<text style="color: #007AFF;" @click="open">查看详情</text>
 		</uni-card>
