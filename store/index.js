@@ -9,12 +9,12 @@ const store = new Vuex.Store({
 			home: {
 				id: 1,
 				name: 'tax',
-				img: 'static/img/homeHL.png'
+				img: 'static/image/chat/homeHL.png'
 			},
 			customer: {
 				id: 2,
 				name: 'customer',
-				img: 'static/img/customerHL.png'
+				img: 'static/image/chat/customerHL.png'
 			}
 		}
 	},
