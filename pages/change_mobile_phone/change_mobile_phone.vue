@@ -38,7 +38,7 @@
 	flex-direction: column;
 	align-items: center;
 	height: 100vh;
-	background-color: $uni-bg-color-darkg;
+	background-color: $uni-bg-color-grey;
 	color: $uni-text-color;
 	font-size: $uni-font-size-lg;
 }

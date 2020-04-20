@@ -161,6 +161,12 @@
 				"navigationBarTitleText": "紧急联系人"
 			}
         }
+        ,{
+            "path" : "pages/about_us/about_us",
+            "style" : {
+				"navigationBarTitleText": "关于本产品"
+			}
+        }
     ],
 	"tabBar": {
 		"color": "#888888",

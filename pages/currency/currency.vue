@@ -22,7 +22,7 @@
 
 <style lang="scss">
 .currency{
-	background-color: $uni-bg-color-darkg;
+	background-color: $uni-bg-color-grey;
 	height: 100vh;
 }
 </style>
