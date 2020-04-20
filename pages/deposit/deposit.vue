@@ -1,5 +1,5 @@
 <template>
-	<view class="deposit">
+	<view>
 		<capital-turn 
 		buttonType="充值"
 		/>

@@ -65,7 +65,7 @@
 	}
 	.space{
 		height: 2 * $space;
-		background-color: $uni-bg-color-darkg;
+		background-color: $uni-bg-color-grey;
 	}
 	.detailBoard{
 		padding: 2 * $space;

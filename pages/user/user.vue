@@ -124,8 +124,8 @@
 </script>
 
 <style lang="scss" socped>
-	.user {
-		background-color: $uni-bg-color-darkg;
+	.user{
+		background-color: $uni-bg-color-grey;
 		height: 100vh;
 	}
 	.head {

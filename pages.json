@@ -151,6 +151,18 @@
 				"navigationBarTitleText": "在线客服"
 			}
         }
+        ,{
+            "path" : "pages/security_setting/security_setting",
+            "style" : {
+				"navigationBarTitleText": "其他安全绑定"
+			}
+        }
+        ,{
+            "path" : "pages/emergency_contact/emergency_contact",
+            "style" : {
+				"navigationBarTitleText": "紧急联系人"
+			}
+        }
     ],
 	"tabBar": {
 		"color": "#888888",
