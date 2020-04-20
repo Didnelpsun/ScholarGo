@@ -111,7 +111,7 @@
 			<scroll-view id="scrollview" scroll-y="true" :style="{height:style.contentViewHeight+'px'}" :scroll-with-animation="true"
 			    :scroll-top="scrollTop">
 				<view id="msglistview">
-				<message-show v-for="(message,index) in messages" :key="index" v-bind:message="message" :id="index"></message-show>
+				<message-show v-for="(message,index) in messages" :key="index" v-bind:message="message" :index="index"></message-show>
 				<view id="bottom"></view>
 				</view>
 			</scroll-view>
@@ -126,6 +126,7 @@
 	.uni-column {
 		display: flex;
 		flex-direction: column;
+		background-color: #ede8ee;
 	}
 	.content {
 		display: flex;

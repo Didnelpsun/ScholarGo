@@ -1,15 +1,15 @@
 <template>
-	<view class="m-item" :id="'message'+id">
+	<view class="m-item" :id="'message'+index">
 		<view class="m-left">
-			<image class="head_icon" :src="abosultPath+user.home.img" v-if="message.user=='home'"></image>
+			<image class="head_icon" v-if="abosultPath+user.home.img && message.user=='home'" :src="abosultPath+user.home.img"></image>
 		</view>
 		<view class="m-content">
 			<view class="m-content-head" :class="{'m-content-head-right':message.user=='customer'}">
 				<view :class="'m-content-head-'+message.user"> {{ message.content }} </view>
 			</view>
 		</view>
-		<view class="m-right">
-			<image class="head_icon" :src="abosultPath+user.customer.img" v-if="message.user=='customer'"></image>
+		<view class="m-right" >
+			<image class="head_icon" v-if="abosultPath+user.customer.img && message.user=='customer'" :src="abosultPath+user.customer.img"></image>
 		</view>
 	</view>
 </template>
@@ -22,10 +22,14 @@
 	export default {
 		data() {
 			return {
-				abosultPath: "../../"
+				abosultPath: "../../",
+				path_1:"'../../'+'user.home.img'"
 			}
 		},
-		props: ['message', 'id'],
+		props: [
+			'message',
+			'index'
+			],
 		computed: mapState(['user'])
 	}
 </script>
@@ -38,7 +42,7 @@
 	}
 	.m-left {
 		display: flex;
-		width: 120px;
+		/* width: 40px; */
 		justify-content: center;
 		align-items: flex-start;
 	}
@@ -51,13 +55,13 @@
 	}
 	.m-right {
 		display: flex;
-		width: 120px;
+		/* width: 40px; */
 		justify-content: center;
 		align-items: flex-start;
 	}
 	.head_icon {
-		width: 80px;
-		height: 80px;
+		width: 40px;
+		height: 40px;
 	}
 	.m-content-head {
 		position: relative;
@@ -71,10 +75,11 @@
 		background: #1482d1;
 		border: 1px #1482d1 solid;
 		border-radius: 20px;
-		padding: 20px;
+		padding: 10px;
 		color: white;
+		margin-right: 150px;
 	}
-	.m-content-head-home:before {
+	/* .m-content-head-home:before {
 		border: 15px solid transparent;
 		border-right: 15px solid #1482d1;
 		left: -26px;
@@ -82,14 +87,14 @@
 		height: 0;
 		position: absolute;
 		content: ' '
-	}
+	} */
 	.m-content-head-customer {
 		border: 1px white solid;
 		background: white;
 		border-radius: 20px;
-		padding: 20px;
+		padding: 10px;
 	}
-	.m-content-head-customer:after {
+	/* .m-content-head-customer:after {
 		border: 15px solid transparent;
 		border-left: 15px solid white;
 		top: 20px;
@@ -98,5 +103,5 @@
 		height: 0;
 		position: absolute;
 		content: ' '
-	}
+	} */
 </style>
