@@ -25,7 +25,7 @@
 				abosultPath: "../../"
 			}
 		},
-		props: ['message', 'id'],
+		props: ['message'],
 		computed: mapState(['user'])
 	}
 </script>

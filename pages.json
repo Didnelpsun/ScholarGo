@@ -147,7 +147,9 @@
         }
         ,{
             "path" : "pages/chat/chat",
-            "style" : {}
+            "style" : {
+				"navigationBarTitleText": "在线客服"
+			}
         }
     ],
 	"tabBar": {

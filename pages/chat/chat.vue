@@ -126,6 +126,7 @@
 	.uni-column {
 		display: flex;
 		flex-direction: column;
+		background-color: #ede8ee;
 	}
 	.content {
 		display: flex;

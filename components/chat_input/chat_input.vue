@@ -14,7 +14,7 @@
 
 <script>
 	export default {
-		name: "chat-input",
+		name: "chatInput",
 		data() {
 			return {
 				inputValue: ''
