@@ -15,7 +15,7 @@
 		{
 			"path": "pages/auto_service/auto_service",
 			"style": {
-				"navigationBarTitleText": "官方自助服务"
+				"navigationBarTitleText": "反馈与自助服务"
 			}
 		},
 		{
@@ -167,6 +167,12 @@
             "path" : "pages/about_us/about_us",
             "style" : {
 				"navigationBarTitleText": "关于本产品"
+			}
+        }
+        ,{
+            "path" : "pages/private/private",
+            "style" : {
+				"navigationBarTitleText": "隐私"
 			}
         }
     ],

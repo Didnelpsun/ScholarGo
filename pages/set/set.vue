@@ -4,7 +4,10 @@
 			<view class="user">
 				<view style="display: flex;flex-direction: row;align-items: flex-start;">
 					<image :src="imgUrl" />
-					<text style="margin-top: 5px;">{{username}}</text>
+					<view  style="display: flex; flex-direction: column;">
+						<text style="margin-top: 5px;">{{username}}</text>
+						<uni-icons type="chatboxes-filled" size="15" color="#888" style="margin-left: 5px;" />
+					</view>
 				</view>
 				<view class="button">
 					<text>退出</text>
@@ -13,9 +16,9 @@
 			</view>
 		</view>
 		<click-card title="账号与安全" arrow=true @click.native="turnTo('/pages/account_and_safe/account_and_safe')" />
-		<click-card title="隐私" arrow=true />
+		<click-card title="隐私" arrow=true @click.native="turnTo('/pages/private/private')"/>
 		<click-card title="通用" arrow=true @click.native="turnTo('/pages/currency/currency')" />
-		<click-card title="反馈" arrow=true />
+		<click-card title="反馈与自助服务" arrow=true @click.native="turnTo('/pages/auto_service/auto_service')"/>
 		<click-card title="关于本产品" arrow=true @click.native="turnTo('/pages/about_us/about_us')" />
 	</view>
 </template>
