@@ -1,8 +1,5 @@
 <template>
 	<view class="footer">
-		<!-- <view class="footer-left">
-			<view class="uni-icon uni-icon-mic" @tap="startRecognize"> </view>
-		</view> -->
 		<view class="footer-center">
 			<input class="input-text" type="text" v-model="inputValue"></input>
 		</view>
@@ -21,18 +18,6 @@
 			}
 		},
 		methods: {
-			// startRecognize: function () {//发送语音
-			// 	var options = {};
-			// 	var that = this;
-			// 	options.engine = 'iFly';
-			// 	that.inputValue = "";
-			// 	options.speech.startRecognize(options, function (s) {
-			// 		console.log(s);
-			// 		that.inputValue += s;
-			// 	}, function (e) {
-			// 		console.log("语音识别失败：" + e.message);
-			// 	});
-			// },
 			sendMessge: function () {
 				var that = this;
 				if (that.inputValue.trim() == '') {
@@ -51,7 +36,6 @@
 </script>
 
 <style>
-	/* @import "../../common/icon.css"; */
 
 	.footer {
 		display: flex;
@@ -61,16 +45,8 @@
 		min-height: 60px;
 		border-top: solid 1px #bbb;
 		overflow: hidden;
-		/* padding: 5px; */
 		background-color: #fafafa;
 	}
-	/* .footer-left {
-		width: 60px;
-		height: 60px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	} */
 	.footer-right {
 		width: 80px;
 		height: 60px;

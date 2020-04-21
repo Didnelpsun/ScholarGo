@@ -3,21 +3,21 @@
 		<view class="content">
 			<adver/>
 			<uni-grid :column="2">
-				<navigator url="../want_help/want_help" hover-class="navigator-hover">
-			    <uni-grid-item>
-					<view class="indexboard" style="background-color: #7e92dc;">	
+				<view @click="TurntoReward()">
+			    <uni-grid-item >
+					<view class="indexboard" style="background-color: #7e92dc;">
 						<text>发布悬赏贴\n等待帮助者接单</text>
 					</view>
 			    </uni-grid-item>
-				</navigator>
-				<navigator url="../find/find" hover-class="navigator-hover">
+				</view>
+				<view @click="TurntoFind()">
 			    <uni-grid-item>	
 					<view class="indexboard" style="background-color: #9477f3;">
 			        	<text>自主寻找\n立刻解决问题</text>
 						<uni-icons type="contact" size="30"></uni-icons>
 					</view>
 			    </uni-grid-item>
-				</navigator>
+				</view>
 			</uni-grid>
 		</view>
 	</view>
@@ -28,7 +28,6 @@
 	import uniCalendar from '@/components/uni-calendar/uni-calendar.vue'
 	import uniGrid from "@/components/uni-grid/uni-grid.vue"
 	import uniGridItem from "@/components/uni-grid-item/uni-grid-item.vue"
-	import uniIcons from "@/components/uni-icons/uni-icons.vue"
 	export default {
 		data() {
 			return {
@@ -46,14 +45,18 @@
 			uniCalendar,
 			adver,
 			uniGrid,
-			uniGridItem,
-			uniIcons
+			uniGridItem
 		},
 		methods: {
-			TurntoRegister: function() {
-				uni.navigateTo({
-					url: '/pages/register/register'
-				})
+			TurntoReward: function() {
+				uni.switchTab({
+				    url: '/pages/reward/reward'
+				});
+			},
+			TurntoFind: function() {
+				uni.switchTab({
+				    url: '/pages/find/find'
+				});
 			},
 		},
 		computed: {

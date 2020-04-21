@@ -8,7 +8,7 @@
 					<text>我要求助</text>
 					<view class="indexborder">
 						<image src="../../static/image/index/answeer.png" class="indexImg"></image>
-					</view>
+					</view>	
 				</view>
 			</navigator>
 			<navigator url="../will_help/will_help" hover-class="navigator-hover">
@@ -39,7 +39,6 @@
 			searchBar
 		},
 		methods: {
-
 			TurntoRegister: function() {
 				uni.navigateTo({
 					url: '/pages/register/register'
