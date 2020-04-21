@@ -6,7 +6,7 @@
 					<image :src="imgUrl" />
 					<view  style="display: flex; flex-direction: column;">
 						<text style="margin-top: 5px;">{{username}}</text>
-						<uni-icons type="chatboxes-filled" size="15" color="#888" style="margin-left: 5px;" />
+						<uni-icons type="chatboxes-filled" size="15" :color="list" style="margin-left: 5px;" />
 					</view>
 				</view>
 				<view class="button">
@@ -30,7 +30,8 @@
 		data() {
 			return {
 				username: '未设置名称',
-				imgUrl: '../../static/image/user/userimage.jpg'
+				imgUrl: '../../static/image/user/userimage.jpg',
+				list:'#888'
 			};
 		},
 		components: {
