@@ -1,38 +1,44 @@
 <template>
 	<view class="reward">
 		<search-bar></search-bar>
-		<view>
-			<uni-card title="悬赏贴" extra="小红" mode="basic">
-				<text>
-					服务类型：
-					愿意支付金额：
-					服务时长：
-					线上or线下：
-					服务地点（线下）：
-				</text>
-			</uni-card>
-			<reward-stickers 
-			title="帮我完成实验报告"
-			service="学习"
-			name="小王" 
-			address="八号楼" 
-			money="15" 
-			:is_online='is_online' 
-			time="5" 
-			details="帮忙写信息管理学院2019级C语言课程实验报告">
-			</reward-stickers>
-		</view>
+		<scroll-view>
+			<template v-for="item in list">
+				<order-item
+				:key='item.id'
+				:title='item.title'
+				:type='item.type'
+				:name='item.user1' 
+				:address='item.address' 
+				:money='item.money' 
+				:online='item.online' 
+				:time='item.time' 
+				:details='item.details'
+				/>
+			</template>
+		</scroll-view>
 	</view>
 </template>
 
 <script>
 	import uniCard from '@/components/uni-card/uni-card.vue'
-	import rewardSticker from '@/components/reward-stickers/reward-stickers.vue'
+	import OrderItem from '@/components/order-item/order-item.vue'
 	import searchBar from '../../components/search-bar/search-bar.vue'
 	export default {
 		data() {
 			return {
-				is_online:false
+				list:[
+					{
+						id:'245655',
+						title:'帮我完成实验报告',
+						type:'学习',
+						user1:'小王',
+						address:'八号楼',
+						money:'15',
+						online:false,
+						time:'5',
+						details:'帮忙写信息管理学院2019级C语言课程实验报告'
+					}
+				],
 			}
 		},
 		onLoad: function(option) { //option为object类型，会序列化上个页面传递的参数
@@ -41,7 +47,7 @@
 		},
 		components: {
 			uniCard,
-			rewardSticker,
+			OrderItem,
 			searchBar
 		},
 		mounted() {}
