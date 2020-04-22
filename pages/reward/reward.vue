@@ -3,11 +3,11 @@
 		<search-bar></search-bar>
 		<scroll-view>
 			<template v-for="item in list">
-				<order-item
+				<reward-stickers
 				:key='item.id'
 				:title='item.title'
 				:type='item.type'
-				:name='item.user1' 
+				:user1='item.user1' 
 				:address='item.address' 
 				:money='item.money' 
 				:online='item.online' 
@@ -21,7 +21,7 @@
 
 <script>
 	import uniCard from '@/components/uni-card/uni-card.vue'
-	import OrderItem from '@/components/order-item/order-item.vue'
+	import rewardStickers from '@/components/reward-stickers/reward-stickers.vue'
 	import searchBar from '../../components/search-bar/search-bar.vue'
 	export default {
 		data() {
@@ -47,7 +47,7 @@
 		},
 		components: {
 			uniCard,
-			OrderItem,
+			rewardStickers,
 			searchBar
 		},
 		mounted() {}
@@ -56,6 +56,7 @@
 
 <style lang="scss">
 	.reward {
+		background-color: $uni-bg-color-grey;
 		font-size: $uni-font-size-base;
 	}
 </style>
