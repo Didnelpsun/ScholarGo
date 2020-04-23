@@ -1,6 +1,7 @@
 ### 订单数据结构
 
 ```js
+'itemId' : String, //订单号
 'title' : String, //订单的标题
 'type' : String, //订单的类型
 'money' :Number, //交易额
