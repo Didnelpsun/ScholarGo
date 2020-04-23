@@ -10,8 +10,8 @@
 	default : false //是否已经完成了订单，缴纳了金额
 },
 'fee' : Number, //平台抽取佣金
-'startDate' : Date, //订单开始的时间
-'endDate' : Date, //订单完成的时间
+'startDate' : String, //订单开始的时间
+'endDate' : String, //订单完成的时间
 'userId1' : String, //发起订单的用户
 'userId2' : String, //接受订单的用户
 'abuserId' : Array, //邀请接受订单的用户

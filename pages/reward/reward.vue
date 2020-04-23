@@ -35,7 +35,6 @@
 						address:'八号楼',
 						money:'15',
 						online:false,
-						time:'5',
 						details:'帮忙写信息管理学院2019级C语言课程实验报告'
 					}
 				],

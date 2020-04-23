@@ -6,8 +6,7 @@
 		    mode="basic"
 		>
 				<view v-if="type"><text>服务类型：{{type}}\n</text></view>
-				<view v-if="money"><text>愿意支付金额：{{money}}\n</text></view>
-				<view v-if="time"><text>服务时长：{{time}}h\n</text></view>
+				<view v-if="money"><text>愿意支付金额：{{money}}￥\n</text></view>
 				<view v-if="online"><text>开展类型：线上\n</text></view>
 				<view v-else>
 					<text>
@@ -15,7 +14,7 @@
 						服务地点（线下）：{{ address }}\n
 					</text>
 				</view>
-				<text style="color: #007AFF;" @click="open">查看详情</text>
+				<text style="color: #f77103;" @click="open">查看详情</text>
 		</uni-card>
 		<uni-popup ref="popup" type="center" :mask-click="false">
 			<view class="uni-tip">
@@ -43,7 +42,6 @@
 			'type':String,
 			'address':String,
 			'money':Number,
-			'time':Date,
 			'online':{
 				type:Boolean,
 				default:true
