@@ -80,7 +80,7 @@
 	
 	.indexboard {
 		width: 50vw;
-		height: 40vh;
+		height: 55vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
