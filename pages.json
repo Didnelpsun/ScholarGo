@@ -61,7 +61,9 @@
 		}, 
 		{
 			"path": "pages/user_main/user_main",
-			"style": {}
+			"style": {
+				"navigationStyle": "custom"
+			}
 		}, 
 		{
 			"path": "pages/real_name/real_name",
