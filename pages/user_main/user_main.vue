@@ -10,6 +10,16 @@
 		:subtitle="telephone"
 		arrow="true"
 		/>
+		<click-card
+		title="手机号码"
+		:subtitle="telephone"
+		arrow="true"
+		/>
+		<click-card
+		title="手机号码"
+		:subtitle="telephone"
+		arrow="true"
+		/>
 	</view>
 </template>
 
