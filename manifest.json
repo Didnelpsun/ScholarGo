@@ -1,5 +1,5 @@
 {
-    "name" : "帮帮乐",
+    "name" : "ScholarGo",
     "appid" : "__UNI__949D15F",
     "description" : "",
     "versionName" : "1.0.0",
@@ -57,7 +57,7 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "wxacad84e8a9a3559f",
+        "appid" : "",
         "setting" : {
             "urlCheck" : false,
             "postcss" : true,
